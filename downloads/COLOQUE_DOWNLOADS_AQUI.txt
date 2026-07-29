@@ -1,0 +1,1 @@
+Para hospedagem própria, você também pode colocar os instaladores nesta pasta e alterar DOWNLOAD_URL em config.js para downloads/NOME_DO_ARQUIVO.exe.
