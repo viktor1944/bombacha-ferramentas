@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',()=>{
   const cfg=window.BOMBACHA_CONFIG||{};
-  document.querySelectorAll('[data-version]').forEach(el=>el.textContent=cfg.VERSION||'1.0.4');
+  document.querySelectorAll('[data-version]').forEach(el=>el.textContent=cfg.VERSION||'1.0.6.2');
   document.querySelectorAll('[data-size]').forEach(el=>el.textContent=cfg.FILE_SIZE||'71,5 MB');
   document.querySelectorAll('[data-updated]').forEach(el=>el.textContent=cfg.UPDATED_AT||'28/07/2026');
   document.querySelectorAll('.download-link').forEach(a=>{
