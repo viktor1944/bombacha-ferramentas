@@ -1,49 +1,31 @@
-BOMBACHA FERRAMENTAS — PACOTE PRONTO PARA PUBLICAÇÃO
+BOMBACHA FERRAMENTAS — PUBLICAÇÃO NO GITHUB PAGES
 
-ESTA VERSÃO INCLUI:
-- Recorta Fácil;
-- Bombacha WhatsApp com imagens, versão e botão de download;
-- quatro extensões com descrições detalhadas;
-- destaque automático da loja Chrome ou Firefox conforme o navegador;
-- favicon com o mascote;
-- remoção do texto de identidade visual que você pediu para retirar.
+ALTERAÇÕES DESTA VERSÃO:
+- remove a opção Contato do menu superior;
+- deixa o e-mail victor870@bol.com.br somente no rodapé;
+- adiciona o site Jogos na TV à lista de programas;
+- remove todas as referências técnicas de verificação do instalador;
+- atualiza o texto principal da página;
+- adiciona uma seção de apoio ao projeto;
+- inclui a página apoie.html com PIX, QR Code e opções em criptomoedas;
+- preserva os downloads do Recorta Fácil e do Bombacha WhatsApp;
+- preserva as extensões para Chrome e Firefox.
 
-PUBLICAÇÃO DO BOMBACHA WHATSAPP — FAÇA PRIMEIRO
-1. No repositório, abra Releases.
-2. Clique em "Draft a new release".
-3. Em "Choose a tag", escreva exatamente:
-   bombacha-whatsapp-v4.5.0
-4. Título sugerido:
-   Bombacha WhatsApp v4.5.0
-5. Envie exatamente este arquivo como ativo da Release:
-   Bombacha_WhatsApp_Setup.1.exe
-6. Publique a Release.
-
-O endereço esperado pelo site será:
-https://github.com/viktor1944/bombacha-ferramentas/releases/download/bombacha-whatsapp-v4.5.0/Bombacha_WhatsApp_Setup.1.exe
-
-PUBLICAÇÃO DO SITE — FAÇA DEPOIS
-1. Extraia o ZIP do site.
-2. Abra a pasta bombacha-ferramentas-main.
-3. Envie o conteúdo dessa pasta para a raiz do repositório.
-4. Substitua os arquivos existentes e confirme o commit.
-5. Aguarde o GitHub Pages atualizar e pressione Ctrl + F5.
-
-ARQUIVOS ALTERADOS:
+ARQUIVOS ALTERADOS OU ADICIONADOS:
 - index.html
 - estilos.css
 - app.js
 - config.js
 - README_PUBLICAR.txt
-- assets/favicon.ico
-- assets/logo-256.png
-- assets/logo.png
-- assets/mascote.webp
-- assets/recorta-facil.webp
-- assets/bombacha-whatsapp-perfis.webp
-- assets/bombacha-whatsapp-conversa.webp
+- apoie.html
 
-IMPORTANTE:
-- Não coloque o EXE dentro do repositório.
-- O instalador fica somente dentro do ZIP publicado na GitHub Release.
-- O download do Bombacha WhatsApp está centralizado no config.js.
+COMO PUBLICAR:
+1. Extraia o ZIP.
+2. Abra a pasta bombacha-ferramentas-main.
+3. No repositório, clique em Add file > Upload files.
+4. Envie todo o conteúdo de dentro da pasta.
+5. Confirme em Commit changes.
+6. Aguarde o GitHub Pages atualizar e pressione Ctrl + F5 no site.
+
+NOVA RELEASE:
+Não é necessário criar outra Release. Os downloads atuais continuam usando as Releases já publicadas.

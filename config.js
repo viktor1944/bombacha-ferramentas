@@ -2,9 +2,9 @@ window.BOMBACHA_CONFIG = {
   DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/v1.0.5.3/Bombacha_Ferramentas_Recorta_Facil_Setup_v1.0.6.2_Offline_MP4_MP3_Player_Corrigido.1.exe",
   VERSION: "1.0.6.2",
   FILE_SIZE: "71,5 MB",
-  SHA256: "",
   UPDATED_AT: "31/07/2026",
-  CONTACT_EMAIL: "",
+  CONTACT_EMAIL: "victor870@bol.com.br",
+  SUPPORT_URL: "apoie.html",
   PROGRAMS: {
     RECORTA_FACIL: {
       NAME: "Recorta Fácil",
@@ -19,9 +19,13 @@ window.BOMBACHA_CONFIG = {
       DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/bombacha-whatsapp-v4.5.0/Bombacha_WhatsApp_Setup.1.exe",
       VERSION: "4.5.0",
       FILE_SIZE: "108 MB",
-      SHA256: "2af3346df4d15fa0928a7915e70e462ea6f788c2af6482960da40c23e92f0cd2",
       UPDATED_AT: "04/08/2026",
       PLATFORM: "Windows 10 e 11"
+    },
+    JOGOS_NA_TV: {
+      NAME: "Jogos na TV",
+      URL: "https://jogos-na-tv.vercel.app/",
+      PLATFORM: "Web"
     }
   },
   EXTENSIONS: {

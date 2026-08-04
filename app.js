@@ -32,6 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   bindLink('[data-download="recorta-facil"]', programs.RECORTA_FACIL?.DOWNLOAD_URL || cfg.DOWNLOAD_URL || '');
   bindLink('[data-download="bombacha-whatsapp"]', programs.BOMBACHA_WHATSAPP?.DOWNLOAD_URL || '');
+  bindLink('[data-program-link="jogos-na-tv"]', programs.JOGOS_NA_TV?.URL || '');
+
+  document.querySelectorAll('[data-contact-email]').forEach((link) => {
+    const email = cfg.CONTACT_EMAIL || 'victor870@bol.com.br';
+    link.textContent = email;
+    link.href = `mailto:${email}`;
+  });
 
   const extMap = {
     'apitos-ia-bombacha': extensions.APITOS_IA_BOMBACHA,
@@ -50,32 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
       link.rel = 'noopener noreferrer';
     }
   });
-
-  const toast = document.querySelector('.toast');
-  const showToast = (message) => {
-    if (!toast) return;
-    toast.textContent = message;
-    toast.classList.add('show');
-    window.setTimeout(() => toast.classList.remove('show'), 2800);
-  };
-
-  const hashButton = document.querySelector('[data-hash]');
-  if (hashButton) {
-    if (!cfg.SHA256) {
-      hashButton.textContent = 'SHA-256 não publicado';
-      hashButton.disabled = true;
-      hashButton.setAttribute('aria-disabled', 'true');
-    } else {
-      hashButton.addEventListener('click', async () => {
-        try {
-          await navigator.clipboard.writeText(cfg.SHA256);
-          showToast('SHA-256 copiado.');
-        } catch {
-          showToast(cfg.SHA256);
-        }
-      });
-    }
-  }
 
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#menu-principal');

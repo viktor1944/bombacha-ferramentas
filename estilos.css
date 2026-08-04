@@ -81,8 +81,6 @@ button{cursor:pointer}
 .program-meta-list b{font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
 .program-meta-list small{font-size:15px;color:var(--ink);font-weight:700}
 .program-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:26px}
-.text-link{background:transparent;border:0;padding:0;color:var(--brown);font-weight:800}
-.text-link:hover,.text-link:focus-visible{color:var(--orange)}
 
 
 .whatsapp-card{margin-top:0}
@@ -93,6 +91,24 @@ button{cursor:pointer}
 .feature-points{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
 .feature-points li{position:relative;padding-left:25px;color:var(--muted)}
 .feature-points li:before{content:"✓";position:absolute;left:0;color:var(--orange);font-weight:900}
+
+.web-program-card{margin-top:24px}
+.web-program-preview{background:linear-gradient(145deg,#2a180d,#160d08);padding:34px;display:flex;align-items:center;justify-content:center}
+.web-window{width:min(100%,520px);background:#fff8ed;border-radius:18px;overflow:hidden;box-shadow:0 22px 48px rgba(0,0,0,.35)}
+.web-window-bar{height:38px;background:#e8d8c5;display:flex;align-items:center;gap:7px;padding:0 14px}
+.web-window-bar span{width:10px;height:10px;border-radius:50%;background:#9c806b}
+.web-window-content{padding:34px 24px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.web-window-content img{width:82px;height:82px;border-radius:18px;box-shadow:none;margin-bottom:13px}
+.web-window-content strong{font-size:29px;color:var(--brown)}
+.web-window-content small{color:var(--muted);font-size:14px;margin-top:3px}
+.web-day-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+.web-day-tabs b{background:#f2dfc7;color:var(--brown);font-size:12px;padding:8px 11px;border-radius:999px}
+
+.support-section{background:#fff8ed}
+.support-card{display:flex;align-items:center;justify-content:space-between;gap:35px;padding:38px 42px;background:linear-gradient(135deg,#2a180d,#160d08);color:#fff;border-radius:var(--radius);box-shadow:var(--shadow)}
+.support-card>div{max-width:760px}
+.support-card h2{font-size:clamp(30px,4vw,44px);line-height:1.05;margin:10px 0 12px}
+.support-card p{color:#d6c7bb;font-size:17px;margin:0}
 
 .extensions-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
 .extension-card{background:#fff;border-radius:24px;padding:26px;box-shadow:0 16px 35px rgba(33,15,4,.08);border:1px solid rgba(87,43,18,.08)}
@@ -109,12 +125,12 @@ button{cursor:pointer}
 footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
 .footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:20px}
 .footer-grid>p{text-align:center;font-size:13px;margin:0}
+.footer-contact a{color:var(--gold);font-weight:800}
+.footer-contact a:hover,.footer-contact a:focus-visible{color:var(--orange-2)}
 .footer-links{display:flex;justify-content:flex-end;gap:18px;font-size:13px}
 .footer-links a:hover,.footer-links a:focus-visible{color:var(--gold)}
 .brand-footer img{width:54px;height:54px}
 
-.toast{position:fixed;right:25px;bottom:25px;background:#1d120c;color:#fff;padding:14px 20px;border-radius:13px;box-shadow:0 15px 45px rgba(0,0,0,.35);transform:translateY(120px);opacity:0;transition:.3s;z-index:100}
-.toast.show{transform:translateY(0);opacity:1}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
 .delay-1{transition-delay:.12s}
 
@@ -124,6 +140,7 @@ footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
   .menu-toggle{display:block;margin-left:auto}
   .topbar>.container>.button-small{display:none}
   .hero-grid,.program-card-featured,.footer-grid{grid-template-columns:1fr}
+  .support-card{align-items:flex-start;flex-direction:column}
   .extensions-grid{grid-template-columns:1fr}
   .whatsapp-preview-grid{grid-template-columns:1fr 1fr}
   .brand-card{justify-content:center;text-align:center;flex-direction:column}
@@ -137,6 +154,8 @@ footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
   .hero h1{font-size:44px}
   .hero p,.section-heading p,.program-info p{font-size:16px}
   .hero-actions,.program-actions{flex-direction:column;align-items:stretch}
+  .support-card{padding:28px 24px}
+  .support-card .button{width:100%}
   .hero-meta span{width:100%;justify-content:flex-start;border-radius:14px}
   .section{padding:58px 0}
   .program-info{padding:24px}
