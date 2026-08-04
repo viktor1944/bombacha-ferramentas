@@ -16,11 +16,11 @@ PUBLICAÇÃO DO BOMBACHA WHATSAPP — FAÇA PRIMEIRO
 4. Título sugerido:
    Bombacha WhatsApp v4.5.0
 5. Envie exatamente este arquivo como ativo da Release:
-   Bombacha_WhatsApp_v4.5.0_Windows.zip
+   Bombacha_WhatsApp_Setup.1.exe
 6. Publique a Release.
 
 O endereço esperado pelo site será:
-https://github.com/viktor1944/bombacha-ferramentas/releases/download/bombacha-whatsapp-v4.5.0/Bombacha_WhatsApp_v4.5.0_Windows.zip
+https://github.com/viktor1944/bombacha-ferramentas/releases/download/bombacha-whatsapp-v4.5.0/Bombacha_WhatsApp_Setup.1.exe
 
 PUBLICAÇÃO DO SITE — FAÇA DEPOIS
 1. Extraia o ZIP do site.

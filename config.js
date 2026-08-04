@@ -16,10 +16,10 @@ window.BOMBACHA_CONFIG = {
     },
     BOMBACHA_WHATSAPP: {
       NAME: "Bombacha WhatsApp",
-      DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/bombacha-whatsapp-v4.5.0/Bombacha_WhatsApp_v4.5.0_Windows.zip",
+      DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/bombacha-whatsapp-v4.5.0/Bombacha_WhatsApp_Setup.1.exe",
       VERSION: "4.5.0",
-      FILE_SIZE: "105 MB",
-      SHA256: "2663acc55c83463dbe9c4a281e3a3eb62dd8d23a869c3079fb1bc8058a05dac9",
+      FILE_SIZE: "108 MB",
+      SHA256: "2af3346df4d15fa0928a7915e70e462ea6f788c2af6482960da40c23e92f0cd2",
       UPDATED_AT: "04/08/2026",
       PLATFORM: "Windows 10 e 11"
     }
