@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bombacha Ferramentas: programas simples, úteis e feitos para funcionar. Baixe o Recorta Fácil para Windows.">
+  <meta name="description" content="Bombacha Ferramentas: site oficial da marca com programas e extensões. Baixe o Recorta Fácil e acesse as versões para Chrome e Firefox.">
   <meta name="theme-color" content="#1a100a">
-  <meta property="og:title" content="Bombacha Ferramentas">
-  <meta property="og:description" content="Programas simples para facilitar o seu dia.">
-  <meta property="og:image" content="assets/logo.png">
+  <link rel="canonical" href="https://viktor1944.github.io/bombacha-ferramentas/">
+  <meta property="og:title" content="Bombacha Ferramentas — Site oficial">
+  <meta property="og:description" content="Central oficial com programas e extensões da Bombacha Ferramentas.">
+  <meta property="og:image" content="https://viktor1944.github.io/bombacha-ferramentas/assets/logo.png">
+  <meta property="og:url" content="https://viktor1944.github.io/bombacha-ferramentas/">
   <meta property="og:type" content="website">
-  <title>Bombacha Ferramentas — Programas simples para facilitar o seu dia</title>
+  <title>Bombacha Ferramentas — Site oficial</title>
   <link rel="icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="estilos.css">
   <script src="config.js" defer></script>
@@ -17,194 +19,192 @@
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
   <header class="topbar" id="inicio">
     <div class="container nav-wrap">
       <a class="brand" href="#inicio" aria-label="Bombacha Ferramentas — início">
         <img src="assets/logo-256.png" alt="Mascote da Bombacha Ferramentas">
         <span><strong>Bombacha</strong><small>Ferramentas</small></span>
       </a>
+
       <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">☰</button>
+
       <nav id="menu-principal" aria-label="Menu principal">
         <a href="#programas">Programas</a>
-        <a href="#recursos">Recursos</a>
-        <a href="#atualizacoes">Atualizações</a>
-        <a href="#ajuda">Ajuda</a>
-        <a href="#sobre">Sobre</a>
+        <a href="#extensoes">Extensões</a>
+        <a href="#rodape">Contato</a>
       </nav>
-      <a class="button button-small download-link" href="#download">Baixar agora</a>
+
+      <a class="button button-small" data-download="recorta-facil" href="#programas">Baixar Recorta Fácil</a>
     </div>
   </header>
 
   <main id="conteudo">
     <section class="hero">
-      <div class="hero-glow"></div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <span class="eyebrow">BOMBACHA FERRAMENTAS</span>
-          <h1>Programas simples.<br><em>Resultados rápidos.</em></h1>
-          <p>Ferramentas práticas para resolver tarefas do dia a dia sem menus complicados. Instale, abra e faça o que precisa.</p>
-          <div class="hero-actions">
-            <a class="button button-primary download-link" href="#download">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-              Baixar Recorta Fácil
-            </a>
-            <a class="button button-ghost" href="#programas">Conhecer o programa</a>
-          </div>
-          <div class="hero-meta">
-            <span><b>Windows</b> 10 e 11</span>
-            <span><b>Versão</b> <span data-version>1.0.6.2</span></span>
-            <span><b>Instalação</b> offline</span>
-          </div>
-        </div>
-        <div class="hero-art reveal delay-1">
-          <div class="mascot-ring">
-            <img src="assets/mascote.webp" alt="Mascote da Bombacha Ferramentas">
-          </div>
-          <div class="floating-card card-a"><span>✂</span><b>Recorte preciso</b><small>Escolha início e fim</small></div>
-          <div class="floating-card card-b"><span>✓</span><b>Pronto para usar</b><small>FFmpeg incluído</small></div>
-        </div>
-      </div>
-    </section>
+          <span class="eyebrow">SITE OFICIAL</span>
+          <h1>Bombacha Ferramentas</h1>
+          <p>Central oficial da marca para apresentar programas e extensões de forma direta, simples e organizada.</p>
 
-    <section class="trust-strip" aria-label="Características principais">
-      <div class="container trust-grid">
-        <div><span>01</span><p><b>Instalador oficial</b><small>Distribuição organizada em EXE</small></p></div>
-        <div><span>02</span><p><b>Funciona offline</b><small>Componentes já incluídos</small></p></div>
-        <div><span>03</span><p><b>Atualizações claras</b><small>Versão e histórico publicados</small></p></div>
-        <div><span>04</span><p><b>Feito para Windows</b><small>Interface simples e objetiva</small></p></div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#programas">Ver programas</a>
+            <a class="button button-ghost" href="#extensoes">Ver extensões</a>
+          </div>
+
+          <div class="hero-meta">
+            <span><b>Programas</b> para Windows</span>
+            <span><b>Extensões</b> para Chrome e Firefox</span>
+            <span><b>Navegador detectado:</b> <strong data-current-browser>Outro navegador</strong></span>
+          </div>
+        </div>
+
+        <div class="hero-brand reveal delay-1">
+          <div class="brand-card">
+            <img src="assets/logo-256.png" alt="Mascote oficial da Bombacha Ferramentas">
+            <div>
+              <span class="eyebrow">MASCOTE OFICIAL</span>
+              <h2>Bombacha Ferramentas</h2>
+              <p>Programas e extensões reunidos em um único lugar, com acesso simples e direto.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="programas">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="eyebrow">NOSSOS PROGRAMAS</span>
-          <h2>Uma ferramenta de cada vez.<br>Bem feita de verdade.</h2>
-          <p>O catálogo começa com o Recorta Fácil e já está preparado para receber os próximos programas da marca.</p>
+          <span class="eyebrow">PROGRAMAS</span>
+          <h2>Softwares oficiais</h2>
+          <p>Conheça os programas já publicados pela Bombacha Ferramentas.</p>
         </div>
 
-        <article class="program-card reveal">
-          <div class="program-info">
-            <div class="program-icon"><img src="assets/logo-256.png" alt="Ícone do Recorta Fácil"></div>
-            <span class="status-badge">Disponível agora</span>
-            <h3>Recorta Fácil</h3>
-            <p>Editor visual para selecionar e recortar trechos de vídeos. Veja a prévia, arraste os marcadores e gere o arquivo em poucos cliques.</p>
-            <ul class="check-list">
-              <li>Pré-visualização e linha do tempo</li>
-              <li>Marcadores arrastáveis de início e fim</li>
-              <li>Modo exato e modo rápido</li>
-              <li>Pasta de destino e avisos configuráveis</li>
-            </ul>
-            <div class="program-actions">
-              <a class="button button-primary download-link" href="#download">Baixar para Windows</a>
-              <a class="text-link" href="#recursos">Ver todos os recursos →</a>
+        <div class="programs-grid">
+          <article class="program-card program-card-featured reveal">
+            <div class="program-preview">
+              <img src="assets/recorta-facil.webp" alt="Tela do programa Recorta Fácil" loading="lazy">
             </div>
-          </div>
-          <div class="program-preview">
-            <img src="assets/recorta-facil.webp" alt="Tela do programa Recorta Fácil" loading="lazy">
-            <div class="preview-caption"><span>Editor visual</span><span>Linha do tempo</span><span>Recorte offline</span></div>
-          </div>
-        </article>
+            <div class="program-info">
+              <span class="status-badge">Disponível agora</span>
+              <h3>Recorta Fácil</h3>
+              <p>Corte MP4 e MP3 de forma rápida, fácil e intuitiva, sem rodeios e sem dificuldade.</p>
 
-        <div class="future-grid">
-          <article class="future-card reveal"><span>+</span><h3>Próxima ferramenta</h3><p>Novo programa da Bombacha Ferramentas.</p><small>Em desenvolvimento</small></article>
-          <article class="future-card reveal delay-1"><span>+</span><h3>Mais utilitários</h3><p>O site crescerá junto com o catálogo.</p><small>Em breve</small></article>
+              <div class="program-meta-list">
+                <span><b>Versão</b><small data-bind="programs.RECORTA_FACIL.VERSION">1.0.6.2</small></span>
+                <span><b>Plataforma</b><small data-bind="programs.RECORTA_FACIL.PLATFORM">Windows 10 e 11</small></span>
+                <span><b>Tamanho</b><small data-bind="programs.RECORTA_FACIL.FILE_SIZE">71,5 MB</small></span>
+              </div>
+
+              <div class="program-actions">
+                <a class="button button-primary" data-download="recorta-facil" href="#">Baixar Recorta Fácil</a>
+                <button class="text-link" type="button" data-hash>Copiar SHA-256</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="program-card program-card-featured whatsapp-card reveal">
+            <div class="program-preview whatsapp-preview-grid">
+              <figure>
+                <img src="assets/bombacha-whatsapp-perfis.webp" alt="Gerenciador de perfis do Bombacha WhatsApp" loading="lazy">
+                <figcaption>Vários perfis separados</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/bombacha-whatsapp-conversa.webp" alt="Abertura direta de conversa por número no Bombacha WhatsApp" loading="lazy">
+                <figcaption>Conversa direta por número</figcaption>
+              </figure>
+            </div>
+            <div class="program-info">
+              <span class="status-badge status-badge-alt">Disponível para Windows</span>
+              <h3>Bombacha WhatsApp</h3>
+              <p>Cliente para usar vários perfis separados, abrir conversas diretamente por número sem salvar o contato e ter uma alternativa mais estável para o uso diário.</p>
+
+              <ul class="feature-points">
+                <li>Crie, renomeie e alterne entre diferentes perfis.</li>
+                <li>Abra uma conversa informando o código do país e o telefone.</li>
+                <li>Use atalhos e defina o perfil principal.</li>
+              </ul>
+
+              <div class="program-meta-list">
+                <span><b>Versão</b><small data-bind="programs.BOMBACHA_WHATSAPP.VERSION">4.5.0</small></span>
+                <span><b>Plataforma</b><small data-bind="programs.BOMBACHA_WHATSAPP.PLATFORM">Windows 10 e 11</small></span>
+                <span><b>Tamanho</b><small data-bind="programs.BOMBACHA_WHATSAPP.FILE_SIZE">105 MB</small></span>
+              </div>
+
+              <div class="program-actions">
+                <a class="button button-primary" data-download="bombacha-whatsapp" href="#">Baixar Bombacha WhatsApp</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark" id="recursos">
-      <div class="container feature-layout">
-        <div class="feature-sticky reveal">
-          <span class="eyebrow">RECORTA FÁCIL</span>
-          <h2>Recortar vídeo não precisa ser complicado.</h2>
-          <p>Escolha o arquivo, assista à prévia e ajuste visualmente o trecho desejado.</p>
-          <img src="assets/instalador.webp" alt="Instalador temático da Bombacha Ferramentas" loading="lazy">
-        </div>
-        <div class="feature-list">
-          <article class="feature-item reveal"><b>01</b><div><h3>Prévia dentro do programa</h3><p>Reproduza o vídeo antes de recortar e confira exatamente o trecho selecionado.</p></div></article>
-          <article class="feature-item reveal"><b>02</b><div><h3>Linha do tempo com miniaturas</h3><p>Localize momentos do vídeo visualmente e arraste os dois marcadores de corte.</p></div></article>
-          <article class="feature-item reveal"><b>03</b><div><h3>Recorte exato ou rápido</h3><p>Escolha precisão no segundo informado ou cópia rápida sem reprocessamento.</p></div></article>
-          <article class="feature-item reveal"><b>04</b><div><h3>Destino e abertura automática</h3><p>Defina onde salvar e escolha abrir a pasta ou o arquivo ao terminar.</p></div></article>
-          <article class="feature-item reveal"><b>05</b><div><h3>Sons configuráveis</h3><p>Selecione o aviso de conclusão, teste o som e ajuste o volume.</p></div></article>
-          <article class="feature-item reveal"><b>06</b><div><h3>Instalação totalmente offline</h3><p>O FFmpeg e o FFprobe já acompanham o instalador oficial.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="download">
-      <div class="container download-card reveal">
-        <div>
-          <span class="eyebrow">DOWNLOAD OFICIAL</span>
-          <h2>Recorta Fácil para Windows</h2>
-          <p>Instalador completo, com todos os componentes necessários para funcionar sem internet.</p>
-          <div class="download-details">
-            <span>Versão <b data-version>1.0.6.2</b></span>
-            <span>Tamanho <b data-size>71,5 MB</b></span>
-            <span>Atualizado em <b data-updated>28/07/2026</b></span>
-            <span>Arquitetura <b>64 bits</b></span>
-          </div>
-        </div>
-        <div class="download-box">
-          <img src="assets/logo-256.png" alt="">
-          <a class="button button-primary button-wide download-link" href="#">Baixar instalador EXE</a>
-          <button class="copy-hash" type="button" data-hash>Copiar SHA-256</button>
-          <small>Arquivo oficial da Bombacha Ferramentas</small>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="atualizacoes">
-      <div class="container updates-layout">
+    <section class="section section-soft" id="extensoes">
+      <div class="container">
         <div class="section-heading reveal">
-          <span class="eyebrow">ATUALIZAÇÕES</span>
-          <h2>Histórico transparente.</h2>
-          <p>Veja o que mudou em cada versão do programa.</p>
+          <span class="eyebrow">EXTENSÕES</span>
+          <h2>Chrome e Firefox no mesmo lugar</h2>
+          <p>As duas versões aparecem sempre. A opção mais compatível com seu navegador recebe destaque automático.</p>
         </div>
-        <div class="timeline">
-          <article class="timeline-item reveal"><div class="version">1.0.6.2</div><div><span class="status-badge">Atual</span><h3>MP4, MP3 e melhorias gerais</h3><p>Nova versão do Recorta Fácil com suporte atualizado e melhorias no processamento de mídia.</p><time>31 de julho de 2026</time></div></article>
-          <article class="timeline-item reveal"><div class="version">1.0.3</div><div><h3>Sons e volume</h3><p>Escolha de avisos sonoros, controle de volume e botão para testar o som.</p></div></article>
-          <article class="timeline-item reveal"><div class="version">1.0.2</div><div><h3>Interface e desinstalação</h3><p>Janela maximizada, abertura automática do arquivo e desinstalador completo.</p></div></article>
-        </div>
-      </div>
-    </section>
 
-    <section class="section" id="ajuda">
-      <div class="container faq-layout">
-        <div class="section-heading reveal">
-          <span class="eyebrow">AJUDA</span>
-          <h2>Perguntas frequentes</h2>
-        </div>
-        <div class="faq-list">
-          <details class="reveal"><summary>O programa funciona sem internet?</summary><p>Sim. A versão offline inclui os componentes de vídeo necessários dentro do instalador.</p></details>
-          <details class="reveal"><summary>Onde o vídeo recortado é salvo?</summary><p>Na pasta escolhida em Ferramentas. Também é possível usar a mesma pasta do vídeo original.</p></details>
-          <details class="reveal"><summary>É possível desinstalar normalmente?</summary><p>Sim. O Recorta Fácil aparece na lista de aplicativos instalados do Windows e também cria uma opção de desinstalação no Menu Iniciar.</p></details>
-          <details class="reveal"><summary>O Windows pode mostrar “Editor desconhecido”?</summary><p>Isso pode acontecer enquanto o instalador não possui assinatura digital de código. Baixe somente pela página oficial e confira a versão e o SHA-256 publicados.</p></details>
-        </div>
-      </div>
-    </section>
+        <div class="extensions-grid">
+          <article class="extension-card reveal">
+            <h3>Apitos de IA Bombacha</h3>
+            <p>Avisa com voz em português e som escolhido quando ChatGPT, Claude, Gemini, Perplexity, Grok ou Manus terminam uma resposta. Também pode tocar um som discreto de digitação enquanto a IA ainda está escrevendo.</p>
+            <div class="store-actions">
+              <a class="store-link chrome" data-extension="apitos-ia-bombacha" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="apitos-ia-bombacha" data-browser="firefox" href="#">Firefox</a>
+            </div>
+          </article>
 
-    <section class="section about" id="sobre">
-      <div class="container about-grid">
-        <div class="about-mascot reveal"><img src="assets/mascote.webp" alt="Mascote Bombacha Ferramentas" loading="lazy"></div>
-        <div class="about-copy reveal delay-1">
-          <span class="eyebrow">SOBRE A MARCA</span>
-          <h2>Bombacha Ferramentas</h2>
-          <p>A Bombacha Ferramentas transforma necessidades comuns em programas práticos e funcionais. Cada aplicativo é criado para executar bem uma tarefa específica, com instalação organizada e interface fácil de entender.</p>
-          <p>O projeto começa com o Recorta Fácil e seguirá crescendo com novos utilitários.</p>
-          <div class="signature">Programas simples para facilitar o seu dia.</div>
+          <article class="extension-card reveal">
+            <h3>Jogos na TV · Bombacha</h3>
+            <p>Mostra os jogos do dia, horários e canais de transmissão, com alerta sonoro antes da partida. Permite organizar a programação, salvar favoritos, aplicar filtros e ocultar conteúdos; não transmite os jogos.</p>
+            <div class="store-actions">
+              <a class="store-link chrome" data-extension="jogos-na-tv-bombacha" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="jogos-na-tv-bombacha" data-browser="firefox" href="#">Firefox</a>
+            </div>
+          </article>
+
+          <article class="extension-card reveal">
+            <h3>Bombacha Vídeos Download</h3>
+            <p>Adiciona um painel para baixar vídeos de sites e redes sociais compatíveis usando servidores Cobalt. Permite escolher instâncias, tentar servidores alternativos e organizar as opções de download sem hospedar os arquivos.</p>
+            <div class="store-actions">
+              <a class="store-link chrome" data-extension="bombacha-videos-download" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="bombacha-videos-download" data-browser="firefox" href="#">Firefox</a>
+            </div>
+          </article>
+
+          <article class="extension-card reveal">
+            <h3>Timer do Galhofinha</h3>
+            <p>Reúne temporizador, alarme e cronômetro. Aceita intervalos de segundos a horas, oferece diferentes sons, notificações visuais e sonoras, registro de voltas e armazenamento local das configurações.</p>
+            <div class="store-actions">
+              <a class="store-link chrome" data-extension="timer-do-galhofinha" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="timer-do-galhofinha" data-browser="firefox" href="#">Firefox</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer id="rodape">
     <div class="container footer-grid">
-      <a class="brand brand-footer" href="#inicio"><img src="assets/logo-256.png" alt=""><span><strong>Bombacha</strong><small>Ferramentas</small></span></a>
-      <p>© 2026 Bombacha Ferramentas.<br>Todos os direitos reservados.</p>
-      <div class="footer-links"><a href="termos.html">Termos de uso</a><a href="privacidade.html">Privacidade</a><a href="#ajuda">Ajuda</a></div>
+      <a class="brand brand-footer" href="#inicio" aria-label="Bombacha Ferramentas — início">
+        <img src="assets/logo-256.png" alt="Mascote da Bombacha Ferramentas">
+        <span><strong>Bombacha</strong><small>Ferramentas</small></span>
+      </a>
+
+      <p>Site oficial da Bombacha Ferramentas.</p>
+
+      <div class="footer-links">
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+      </div>
     </div>
   </footer>
-  <div class="toast" role="status" aria-live="polite"></div>
+
+  <div class="toast" aria-live="polite"></div>
 </body>
 </html>
