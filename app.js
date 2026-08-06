@@ -1,3 +1,4 @@
+// Bombacha Ferramentas - cache fix 2
 document.addEventListener('DOMContentLoaded', () => {
   const cfg = window.BOMBACHA_CONFIG || {};
   const programs = cfg.PROGRAMS || {};

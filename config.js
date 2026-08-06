@@ -1,3 +1,4 @@
+// Bombacha Ferramentas - download automatico cache fix 2
 window.BOMBACHA_CONFIG = {
   DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/v1.0.5.3/Bombacha_Ferramentas_Recorta_Facil_Setup_v1.0.6.2_Offline_MP4_MP3_Player_Corrigido.1.exe",
   VERSION: "1.0.6.2",

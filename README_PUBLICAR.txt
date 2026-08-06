@@ -30,3 +30,9 @@ COMO PUBLICAR O SITE:
 8. Abra o site e pressione Ctrl + F5.
 
 O ZIP NÃO CONTÉM ARQUIVO EXE.
+
+
+CORREÇÃO DE CACHE — 06/08/2026
+- O index.html recebeu um novo identificador nos arquivos CSS e JavaScript.
+- O botão do Bombacha WhatsApp possui também um link direto de reserva para a Release Latest.
+- Após publicar, aguarde 2 minutos e abra o site em uma janela privativa para confirmar.
