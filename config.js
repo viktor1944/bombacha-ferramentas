@@ -16,10 +16,10 @@ window.BOMBACHA_CONFIG = {
     },
     BOMBACHA_WHATSAPP: {
       NAME: "Bombacha WhatsApp",
-      DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/bombacha-whatsapp-v5.5.0/Bombacha_WhatsApp_Setup_v5.5.0.exe",
-      VERSION: "5.5.0",
-      FILE_SIZE: "108,25 MB",
-      UPDATED_AT: "04/08/2026",
+      DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/latest/download/Bombacha_WhatsApp_Setup.exe",
+      VERSION: "Mais recente",
+      FILE_SIZE: "Varia conforme a versão",
+      UPDATED_AT: "Atualização automática",
       PLATFORM: "Windows 10 e 11"
     },
     JOGOS_NA_TV: {
