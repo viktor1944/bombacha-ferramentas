@@ -1,31 +1,32 @@
-BOMBACHA FERRAMENTAS — PUBLICAÇÃO NO GITHUB PAGES
+BOMBACHA FERRAMENTAS — SITE COMPLETO PARA PUBLICAÇÃO
 
-ALTERAÇÕES DESTA VERSÃO:
-- remove a opção Contato do menu superior;
-- deixa o e-mail victor870@bol.com.br somente no rodapé;
-- adiciona o site Jogos na TV à lista de programas;
-- remove todas as referências técnicas de verificação do instalador;
-- atualiza o texto principal da página;
-- adiciona uma seção de apoio ao projeto;
-- inclui a página apoie.html com PIX, QR Code e opções em criptomoedas;
-- preserva os downloads do Recorta Fácil e do Bombacha WhatsApp;
-- preserva as extensões para Chrome e Firefox.
+ESTA VERSÃO INCLUI:
+- Recorta Fácil;
+- Bombacha WhatsApp;
+- Jogos na TV;
+- extensões para Chrome e Firefox;
+- página de apoio com beneficiário Flavio e chave PIX do tipo CPF;
+- e-mail victor870@bol.com.br somente no rodapé;
+- download automático do Bombacha WhatsApp pela Release marcada como Latest.
 
-ARQUIVOS ALTERADOS OU ADICIONADOS:
-- index.html
-- estilos.css
-- app.js
-- config.js
-- README_PUBLICAR.txt
-- apoie.html
+LINK AUTOMÁTICO DO WHATSAPP:
+https://github.com/viktor1944/bombacha-ferramentas/releases/latest/download/Bombacha_WhatsApp_Setup.exe
 
-COMO PUBLICAR:
-1. Extraia o ZIP.
+IMPORTANTE PARA AS PRÓXIMAS VERSÕES DO WHATSAPP:
+1. Crie uma nova Release com uma tag nova.
+2. Marque a Release como Latest.
+3. O instalador deve sempre se chamar exatamente:
+   Bombacha_WhatsApp_Setup.exe
+4. Não coloque o EXE no repositório principal do site.
+
+COMO PUBLICAR O SITE:
+1. Extraia este ZIP.
 2. Abra a pasta bombacha-ferramentas-main.
-3. No repositório, clique em Add file > Upload files.
-4. Envie todo o conteúdo de dentro da pasta.
-5. Confirme em Commit changes.
-6. Aguarde o GitHub Pages atualizar e pressione Ctrl + F5 no site.
+3. No repositório, abra a aba Code.
+4. Clique em Add file > Upload files.
+5. Selecione tudo que está dentro da pasta bombacha-ferramentas-main.
+6. Envie os arquivos e confirme em Commit changes.
+7. Aguarde o GitHub Pages atualizar.
+8. Abra o site e pressione Ctrl + F5.
 
-NOVA RELEASE:
-Não é necessário criar outra Release. Os downloads atuais continuam usando as Releases já publicadas.
+O ZIP NÃO CONTÉM ARQUIVO EXE.
