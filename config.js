@@ -1,4 +1,4 @@
-// Bombacha Ferramentas - download automatico cache fix 2
+// Bombacha Ferramentas - configuracao central de downloads e links
 window.BOMBACHA_CONFIG = {
   DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/v1.0.5.3/Bombacha_Ferramentas_Recorta_Facil_Setup_v1.0.6.2_Offline_MP4_MP3_Player_Corrigido.1.exe",
   VERSION: "1.0.6.2",
@@ -22,6 +22,14 @@ window.BOMBACHA_CONFIG = {
       FILE_SIZE: "Varia conforme a versão",
       UPDATED_AT: "Atualização automática",
       PLATFORM: "Windows 10 e 11"
+    },
+    QUICKDROP: {
+      NAME: "QuickDrop",
+      DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/quickdrop-v2.0.1/QuickDrop_v2.0.1_Portable.zip",
+      VERSION: "2.0.1 CLEAN",
+      FILE_SIZE: "53,0 MB",
+      UPDATED_AT: "16/08/2026",
+      PLATFORM: "Windows — portátil"
     },
     JOGOS_NA_TV: {
       NAME: "Jogos na TV",

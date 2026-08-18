@@ -1,5 +1,5 @@
-// Bombacha Ferramentas - cache fix 2
-document.addEventListener('DOMContentLoaded', () => {
+// Bombacha Ferramentas - scripts gerais
+ document.addEventListener('DOMContentLoaded', () => {
   const cfg = window.BOMBACHA_CONFIG || {};
   const programs = cfg.PROGRAMS || {};
   const extensions = cfg.EXTENSIONS || {};
@@ -10,9 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('[data-bind]').forEach((element) => {
     const value = byPath({ cfg, programs, extensions }, element.dataset.bind, element.textContent.trim());
-    if (value !== undefined && value !== null && value !== '') {
-      element.textContent = value;
-    }
+    if (value !== undefined && value !== null && value !== '') element.textContent = value;
   });
 
   const bindLink = (selector, url) => {
@@ -25,14 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
         link.href = '#';
         link.classList.add('is-disabled');
         link.setAttribute('aria-disabled', 'true');
-        const disabledText = link.dataset.disabledText;
-        if (disabledText) link.textContent = disabledText;
+        if (link.dataset.disabledText) link.textContent = link.dataset.disabledText;
       }
     });
   };
 
   bindLink('[data-download="recorta-facil"]', programs.RECORTA_FACIL?.DOWNLOAD_URL || cfg.DOWNLOAD_URL || '');
   bindLink('[data-download="bombacha-whatsapp"]', programs.BOMBACHA_WHATSAPP?.DOWNLOAD_URL || '');
+  bindLink('[data-download="quickdrop"]', programs.QUICKDROP?.DOWNLOAD_URL || '');
   bindLink('[data-program-link="jogos-na-tv"]', programs.JOGOS_NA_TV?.URL || '');
 
   document.querySelectorAll('[data-contact-email]').forEach((link) => {
@@ -61,20 +59,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#menu-principal');
-
   toggle?.addEventListener('click', () => {
     const isOpen = nav?.classList.toggle('open') || false;
     toggle.setAttribute('aria-expanded', String(isOpen));
     toggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
   });
-
-  nav?.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      toggle?.setAttribute('aria-expanded', 'false');
-      toggle?.setAttribute('aria-label', 'Abrir menu');
-    });
-  });
+  nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    toggle?.setAttribute('aria-expanded', 'false');
+    toggle?.setAttribute('aria-label', 'Abrir menu');
+  }));
 
   const ua = (navigator.userAgent || '').toLowerCase();
   const isFirefox = ua.includes('firefox');
@@ -83,10 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (isFirefox) currentBrowser = 'Firefox';
   if (isChromeFamily) currentBrowser = 'Chrome / navegador compatível';
 
-  document.querySelectorAll('[data-current-browser]').forEach((el) => {
-    el.textContent = currentBrowser;
-  });
-
+  document.querySelectorAll('[data-current-browser]').forEach((el) => { el.textContent = currentBrowser; });
   const preferredBrowser = isFirefox ? 'firefox' : (isChromeFamily ? 'chrome' : '');
   if (preferredBrowser) {
     document.body.dataset.browser = preferredBrowser;
@@ -111,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, { threshold: 0.12 });
-
     revealElements.forEach((element) => observer.observe(element));
   } else {
     revealElements.forEach((element) => element.classList.add('visible'));
