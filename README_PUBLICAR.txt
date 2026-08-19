@@ -37,3 +37,12 @@ COMO PUBLICAR O SITE
 
 DOWNLOADS
 Os links dos programas continuam centralizados no config.js.
+
+
+CYBERDROP BROWSER HELPER v3.5.2
+- Nova página: cyberdrop-helper.html
+- Nova imagem: assets/cyberdrop-helper.webp
+- Download configurado para a Release com:
+  Tag: cyberdrop-helper-v3.5.2
+  Arquivo: Cyberdrop_Helper_v3.5.2.zip
+- NÃO marque essa Release como Latest, pois o Bombacha WhatsApp usa o endereço /releases/latest/.

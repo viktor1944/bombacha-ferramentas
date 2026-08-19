@@ -31,6 +31,7 @@
   bindLink('[data-download="recorta-facil"]', programs.RECORTA_FACIL?.DOWNLOAD_URL || cfg.DOWNLOAD_URL || '');
   bindLink('[data-download="bombacha-whatsapp"]', programs.BOMBACHA_WHATSAPP?.DOWNLOAD_URL || '');
   bindLink('[data-download="quickdrop"]', programs.QUICKDROP?.DOWNLOAD_URL || '');
+  bindLink('[data-download="cyberdrop-helper"]', programs.CYBERDROP_HELPER?.DOWNLOAD_URL || '');
   bindLink('[data-program-link="jogos-na-tv"]', programs.JOGOS_NA_TV?.URL || '');
 
   document.querySelectorAll('[data-contact-email]').forEach((link) => {

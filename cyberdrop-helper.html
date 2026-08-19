@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cyberdrop Browser Helper: integração do Cyberdrop-DL com o navegador para iniciar downloads em sites compatíveis com um clique.">
+  <meta name="theme-color" content="#1a100a">
+  <title>Cyberdrop Browser Helper — Bombacha Ferramentas</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="estilos.css?v=20260819-cyberdrop-1">
+  <script src="config.js?v=20260819-cyberdrop-1" defer></script>
+  <script src="app.js?v=20260819-cyberdrop-1" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Bombacha Ferramentas — início">
+        <img src="assets/logo-256.png" alt="Mascote da Bombacha Ferramentas">
+        <span><strong>Bombacha</strong><small>Ferramentas</small></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">☰</button>
+      <nav id="menu-principal" aria-label="Menu principal">
+        <a href="index.html#programas">Programas</a>
+        <a href="index.html#extensoes">Extensões</a>
+        <a href="apoie.html">Apoie</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <div class="container detail-hero-grid">
+        <div class="detail-copy reveal">
+          <a class="back-link" href="index.html">← Voltar para Bombacha Ferramentas</a>
+          <span class="status-badge">Windows + navegador</span>
+          <h1>Cyberdrop Browser Helper</h1>
+          <p>Um downloader integrado ao Cyberdrop-DL para iniciar downloads diretamente pelo navegador em sites compatíveis.</p>
+
+          <div class="detail-actions">
+            <a class="button button-primary" data-download="cyberdrop-helper" href="#">Baixar Cyberdrop Helper 3.5.2</a>
+            <a class="store-link firefox" data-browser="firefox" href="https://addons.mozilla.org/firefox/downloads/file/4965615/9bd1b12d6522473bb286-2.2.1.xpi" target="_blank" rel="noopener noreferrer">Extensão Firefox</a>
+          </div>
+
+          <div class="detail-meta">
+            <span><b>Versão</b><small><span data-bind="programs.CYBERDROP_HELPER.VERSION">3.5.2</span></small></span>
+            <span><b>Plataforma</b><small><span data-bind="programs.CYBERDROP_HELPER.PLATFORM">Windows + navegador</span></small></span>
+            <span><b>Extensões</b><small>Firefox e Chromium</small></span>
+          </div>
+        </div>
+
+        <div class="detail-media reveal delay-1">
+          <img class="detail-screenshot" src="assets/cyberdrop-helper.webp" alt="Cyberdrop-DL baixando vários arquivos e exibindo progresso">
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-body">
+      <div class="container detail-content">
+        <section class="detail-section">
+          <h2>Downloads direto pelo navegador</h2>
+          <p>O <strong>Cyberdrop Browser Helper</strong> é um downloader integrado ao Cyberdrop-DL, criado para facilitar downloads diretamente pelo navegador. Ao acessar um site compatível, aparece o botão <strong>“↓ Cyberdrop”</strong> e, com um clique, o download é iniciado automaticamente.</p>
+          <p>O pacote instala ou atualiza o Cyberdrop-DL, configura a integração no Windows e oferece os arquivos necessários para usar a extensão no Firefox, Chrome, Edge e Brave.</p>
+        </section>
+
+        <section class="detail-section">
+          <h2>Sites suportados</h2>
+          <p>Entre os serviços reconhecidos estão Bunkr, GoFile, MediaFire, PixelDrain, Cyberdrop, Cyberfile, MEGA, Google Drive, Dropbox, Catbox, Litterbox, FileDitch, Buzzheavier, Koofr, Box, Imgur, ImgBox, ImageBam, ImageVenue, Flickr, Giphy, Streamable, Dailymotion, Odysee, TikTok, Reddit, Bandcamp e Cloudflare Stream, além de outros sites suportados pelo Cyberdrop-DL.</p>
+        </section>
+
+        <section class="detail-section">
+          <h2>Principais recursos</h2>
+          <ul class="detail-list">
+            <li>Botão “↓ Cyberdrop” em sites reconhecidos pela integração.</li>
+            <li>Download iniciado diretamente pelo navegador através do Cyberdrop-DL.</li>
+            <li>Escolha da pasta de destino.</li>
+            <li>Abertura automática da pasta quando o download termina.</li>
+            <li>Aviso sonoro de conclusão.</li>
+            <li>Atualização do Cyberdrop-DL e da lista de sites reconhecidos.</li>
+            <li>Adição manual de novos sites à lista do botão.</li>
+            <li>Suporte a famílias de domínio que podem mudar de endereço, como bunkr.*.</li>
+            <li>Integração para Firefox, Chrome, Edge e Brave.</li>
+          </ul>
+        </section>
+
+        <section class="detail-section">
+          <h2>Extensão do navegador</h2>
+          <p><strong>A extensão é necessária para o botão aparecer nas páginas.</strong> Instalar apenas o Cyberdrop-DL e a integração do Windows não coloca o botão no navegador.</p>
+          <div class="browser-install-grid">
+            <div class="browser-install-card">
+              <h3>Firefox</h3>
+              <p>Use a extensão assinada v2.2.1. O pacote também inclui um BAT que abre a instalação automaticamente no Firefox.</p>
+              <a class="store-link firefox" data-browser="firefox" href="https://addons.mozilla.org/firefox/downloads/file/4965615/9bd1b12d6522473bb286-2.2.1.xpi" target="_blank" rel="noopener noreferrer">Instalar no Firefox</a>
+            </div>
+            <div class="browser-install-card">
+              <h3>Chrome / Edge / Brave</h3>
+              <p>A extensão Chromium está dentro do pacote. Após extrair, use o arquivo <strong>02_INSTALAR_EXTENSAO_CHROME_OBRIGATORIO.bat</strong> e carregue a pasta <strong>03_EXTENSAO_CHROME</strong> em modo do desenvolvedor.</p>
+              <a class="store-link chrome" data-browser="chrome" data-download="cyberdrop-helper" href="#">Baixar pacote com extensão</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="detail-section">
+          <h2>Instalação rápida</h2>
+          <ol class="detail-list numbered-list">
+            <li>Baixe e extraia todo o ZIP.</li>
+            <li>Execute <strong>00_INSTALAR_TUDO.bat</strong>.</li>
+            <li>Escolha a pasta de download e configure o som.</li>
+            <li>Instale a extensão correspondente ao seu navegador.</li>
+            <li>Abra um site suportado e use o botão “↓ Cyberdrop”.</li>
+          </ol>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="container footer-grid">
+      <a class="brand brand-footer" href="index.html"><img src="assets/logo-256.png" alt="Mascote da Bombacha Ferramentas"><span><strong>Bombacha</strong><small>Ferramentas</small></span></a>
+      <p class="footer-contact">Contato: <a data-contact-email href="mailto:victor870@bol.com.br">victor870@bol.com.br</a></p>
+      <div class="footer-links"><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a></div>
+    </div>
+  </footer>
+</body>
+</html>

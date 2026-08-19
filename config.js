@@ -31,6 +31,14 @@ window.BOMBACHA_CONFIG = {
       UPDATED_AT: "16/08/2026",
       PLATFORM: "Windows — portátil"
     },
+    CYBERDROP_HELPER: {
+      NAME: "Cyberdrop Browser Helper",
+      DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/cyberdrop-helper-v3.5.2/Cyberdrop_Helper_v3.5.2.zip",
+      VERSION: "3.5.2",
+      FILE_SIZE: "48 KB",
+      UPDATED_AT: "19/08/2026",
+      PLATFORM: "Windows + navegador"
+    },
     JOGOS_NA_TV: {
       NAME: "Jogos na TV",
       URL: "https://jogos-na-tv.vercel.app/",
