@@ -235,3 +235,9 @@ footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
 .browser-install-card p{font-size:15px;margin-bottom:16px}
 .numbered-list{padding-left:26px}
 @media(max-width:700px){.browser-install-grid{grid-template-columns:1fr}}
+
+/* Cyberdrop: sites suportados em destaque na página inicial */
+.supported-sites{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-top:18px}
+.supported-sites strong{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--brown);margin-right:2px}
+.supported-sites span,.supported-sites em{display:inline-flex;align-items:center;padding:5px 9px;border-radius:999px;background:#fff4e4;border:1px solid rgba(200,95,18,.20);font-size:12px;font-style:normal;font-weight:700;color:#6f3b16}
+.supported-sites em{background:var(--brown);border-color:var(--brown);color:#fff}
