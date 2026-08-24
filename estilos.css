@@ -333,3 +333,31 @@ footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
 .simple-card{background:#fff;border-radius:22px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.08);}
 .simple-card h3{margin-top:0;font-size:32px;color:#3b1d0d;}
 .simple-card p{color:#6f513d;margin-bottom:20px;}
+
+/* Ajustes compactos mobile */
+.feature-badge, .catalog-icon, .category-icon {
+    width:72px!important;
+    height:72px!important;
+    border-radius:18px!important;
+}
+.catalog-card, .simple-card {
+    padding:22px!important;
+}
+.simple-card h3 {
+    font-size:26px!important;
+}
+.simple-card p {
+    font-size:15px!important;
+    margin-bottom:14px!important;
+}
+.simple-list {
+    gap:14px!important;
+}
+.button-support {
+    margin-left:10px;
+}
+@media(max-width:700px){
+ .button-support{margin-left:0;margin-top:10px;}
+ .simple-card h3{font-size:22px!important;}
+ .simple-card{padding:18px!important;}
+}
