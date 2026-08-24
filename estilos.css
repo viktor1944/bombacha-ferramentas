@@ -324,3 +324,12 @@ footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
   .catalog-card-program{min-height:auto}
   .catalog-visual{height:180px}
 }
+
+/* Ajustes finais da vitrine */
+.catalog-meta{display:none!important;}
+.catalog-content .button-primary{background:#e8780d!important;color:#fff!important;font-size:16px;padding:14px 24px;box-shadow:0 10px 22px rgba(232,120,13,.35);}
+.catalog-card-program,.catalog-card-extension{min-height:420px;}
+.simple-list{display:grid;gap:20px;}
+.simple-card{background:#fff;border-radius:22px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.08);}
+.simple-card h3{margin-top:0;font-size:32px;color:#3b1d0d;}
+.simple-card p{color:#6f513d;margin-bottom:20px;}
