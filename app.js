@@ -109,5 +109,13 @@
   }
 });
 
+
 // controles de carousel
-document.querySelectorAll('.carousel-btn').forEach(btn=>{btn.addEventListener('click',()=>{const t=document.querySelector('.'+btn.dataset.target); if(t)t.scrollBy({left:btn.classList.contains('next')?360:-360,behavior:'smooth'});});});
+document.querySelectorAll('.carousel-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const target = document.querySelector('.' + btn.dataset.target);
+    if (!target) return;
+    const amount = Math.round(target.clientWidth * 0.9);
+    target.scrollBy({ left: btn.classList.contains('next') ? amount : -amount, behavior: 'smooth' });
+  });
+});

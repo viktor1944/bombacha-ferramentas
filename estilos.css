@@ -248,3 +248,56 @@ footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
 .carousel-track>*{min-width:320px;scroll-snap-align:start}
 .carousel-btn{border:0;background:#7a3f16;color:#fff;width:42px;height:42px;border-radius:50%;font-size:28px;cursor:pointer}
 @media(max-width:700px){.carousel-track>*{min-width:85%}.carousel-btn{display:none}}
+
+
+/* Home carousel rebuild */
+.hero-meta{display:flex;gap:10px;flex-wrap:wrap}
+.hero-meta span{display:inline-flex;align-items:center;gap:6px;padding:10px 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:999px;font-size:13px;color:#ebddd0}
+.carousel-shell{display:flex;align-items:center;gap:14px}
+.carousel-track{display:flex;gap:22px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;padding:8px 2px 16px;flex:1}
+.carousel-track::-webkit-scrollbar{display:none}
+.catalog-card{background:#fff;border:1px solid rgba(87,43,18,.10);border-radius:26px;box-shadow:0 18px 42px rgba(33,15,4,.08);min-width:340px;max-width:340px;overflow:hidden;display:flex;flex-direction:column;scroll-snap-align:start}
+.catalog-card-program{min-height:560px}
+.catalog-card-extension{min-height:320px;padding:24px}
+.catalog-visual{height:220px;background:linear-gradient(145deg,#2d170d,#120b07);display:flex;align-items:center;justify-content:center;padding:16px}
+.catalog-visual img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+.catalog-visual-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;background:linear-gradient(145deg,#2d170d,#120b07)}
+.catalog-visual-grid img{height:180px;object-fit:contain;background:rgba(255,255,255,.06)}
+.catalog-visual-icon{background:linear-gradient(145deg,#33190d,#120b07)}
+.catalog-icon{width:140px !important;height:140px !important;object-fit:contain !important;border-radius:24px !important}
+.catalog-visual-dark{background:#0f1318}
+.catalog-visual-dark img{object-fit:contain}
+.catalog-visual-window{background:linear-gradient(145deg,#33190d,#120b07)}
+.mini-window{width:100%;max-width:220px;background:#f2e7d8;border-radius:18px;overflow:hidden;box-shadow:0 14px 28px rgba(0,0,0,.24)}
+.mini-window-bar{display:flex;gap:7px;padding:10px 12px;background:#d8c1a9}
+.mini-window-bar span{width:10px;height:10px;border-radius:50%;background:#8c6548}
+.mini-window-body{display:flex;flex-direction:column;align-items:center;gap:8px;padding:18px 12px;color:var(--brown);text-align:center}
+.mini-window-body img{width:64px;height:64px;object-fit:contain}
+.catalog-content{padding:22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.catalog-tag{display:inline-flex;align-self:flex-start;padding:8px 12px;border-radius:999px;background:#fff4e6;color:#7a3f16;border:1px solid rgba(200,95,18,.15);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.catalog-content h3{font-size:36px;line-height:.95;margin:0;color:var(--brown)}
+.catalog-content p{margin:0;color:var(--muted);font-size:15px}
+.catalog-sites{font-size:13px !important;line-height:1.55}
+.catalog-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.catalog-meta span{display:inline-flex;align-items:center;gap:5px;padding:8px 10px;border-radius:12px;background:var(--paper-2);border:1px solid rgba(87,43,18,.08);font-size:12px;color:var(--muted)}
+.catalog-meta b{color:var(--brown)}
+.catalog-card .button{margin-top:4px;width:fit-content}
+.extension-symbol{width:74px;height:74px;border-radius:20px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#ef912b,#c15a12);color:#fff;font-size:28px;font-weight:900;box-shadow:0 12px 24px rgba(193,90,18,.25);margin-bottom:18px}
+.carousel-btn{width:46px;height:46px;border-radius:50%;border:none;background:#7a3f16;color:#fff;font-size:30px;line-height:1;cursor:pointer;flex:0 0 auto;box-shadow:0 10px 20px rgba(78,36,13,.18)}
+.carousel-btn:hover{background:#8d4a1b}
+.support-section{padding-top:10px}
+@media (max-width: 900px){
+  .catalog-card{min-width:300px;max-width:300px}
+  .catalog-card-program{min-height:530px}
+  .catalog-content h3{font-size:32px}
+}
+@media (max-width: 700px){
+  .carousel-shell{gap:0}
+  .carousel-btn{display:none}
+  .catalog-card{min-width:82vw;max-width:82vw}
+  .catalog-card-program{min-height:auto}
+  .catalog-card-extension{min-height:auto}
+  .catalog-content h3{font-size:30px}
+  .catalog-visual{height:190px}
+  .hero-meta{gap:8px}
+}
