@@ -301,3 +301,26 @@ footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
   .catalog-visual{height:190px}
   .hero-meta{gap:8px}
 }
+
+
+/* compact home cards */
+.catalog-card{min-width:320px;max-width:320px}
+.catalog-card-program{min-height:460px}
+.catalog-card-extension{min-height:250px;padding:22px}
+.catalog-visual{height:188px}
+.catalog-visual-grid img{height:145px}
+.catalog-content{padding:20px;gap:10px}
+.catalog-content h3{font-size:32px}
+.catalog-content p{font-size:14px;line-height:1.55}
+.catalog-sites{display:none}
+.catalog-card .button{margin-top:auto}
+@media (max-width: 900px){
+  .catalog-card{min-width:290px;max-width:290px}
+  .catalog-card-program{min-height:430px}
+  .catalog-content h3{font-size:30px}
+}
+@media (max-width: 700px){
+  .catalog-card{min-width:82vw;max-width:82vw}
+  .catalog-card-program{min-height:auto}
+  .catalog-visual{height:180px}
+}
