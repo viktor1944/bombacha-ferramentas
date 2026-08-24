@@ -46,3 +46,7 @@ CYBERDROP BROWSER HELPER v3.5.2
   Tag: cyberdrop-helper-v3.5.2
   Arquivo: Cyberdrop_Helper_v3.5.2.zip
 - NÃO marque essa Release como Latest, pois o Bombacha WhatsApp usa o endereço /releases/latest/.
+
+
+AJUSTE RECENTE:
+- página da extensão Bombacha Vídeos Download atualizada com imagem do painel e indicação de melhor funcionamento no Firefox.
