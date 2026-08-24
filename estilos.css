@@ -241,3 +241,10 @@ footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
 .supported-sites strong{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--brown);margin-right:2px}
 .supported-sites span,.supported-sites em{display:inline-flex;align-items:center;padding:5px 9px;border-radius:999px;background:#fff4e4;border:1px solid rgba(200,95,18,.20);font-size:12px;font-style:normal;font-weight:700;color:#6f3b16}
 .supported-sites em{background:var(--brown);border-color:var(--brown);color:#fff}
+
+/* Carousels */
+.carousel-wrap{display:flex;align-items:center;gap:12px}
+.carousel-track{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;flex:1;padding:10px 2px}
+.carousel-track>*{min-width:320px;scroll-snap-align:start}
+.carousel-btn{border:0;background:#7a3f16;color:#fff;width:42px;height:42px;border-radius:50%;font-size:28px;cursor:pointer}
+@media(max-width:700px){.carousel-track>*{min-width:85%}.carousel-btn{display:none}}

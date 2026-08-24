@@ -108,3 +108,6 @@
     revealElements.forEach((element) => element.classList.add('visible'));
   }
 });
+
+// controles de carousel
+document.querySelectorAll('.carousel-btn').forEach(btn=>{btn.addEventListener('click',()=>{const t=document.querySelector('.'+btn.dataset.target); if(t)t.scrollBy({left:btn.classList.contains('next')?360:-360,behavior:'smooth'});});});
