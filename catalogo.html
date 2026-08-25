@@ -1,110 +1,15 @@
 <!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Programas - Bombacha Ferramentas</title>
-<link rel="stylesheet" href="estilos.css">
-<style>
-.programas-list{
-display:flex;
-flex-direction:column;
-gap:14px;
-}
-.programa-item{
-display:flex;
-align-items:center;
-gap:20px;
-background:#fff;
-border-radius:18px;
-padding:18px;
-box-shadow:0 4px 14px rgba(0,0,0,.08);
-}
-.programa-item img{
-width:70px;
-height:70px;
-object-fit:contain;
-flex-shrink:0;
-}
-.programa-info{flex:1}
-.programa-info h3{margin:0 0 8px}
-.programa-info p{margin:0;color:#555}
-.programa-item a{
-white-space:nowrap;
-}
-@media(max-width:650px){
-.programa-item{
-align-items:flex-start;
-flex-direction:column;
-}
-.programa-item a{width:100%;text-align:center}
-}
-</style>
-</head>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Programas e Extensões - Bombacha Ferramentas</title><link rel="stylesheet" href="estilos.css"></head>
 <body>
-<header class="topbar">
-<div class="container nav-wrap">
-<a class="brand" href="index.html">Bombacha Ferramentas</a>
-<nav>
-<a href="programas.html">Programas</a>
-<a href="extensoes.html">Extensões</a>
-<a href="apoie.html">Apoie</a>
-</nav>
-</div>
-</header>
-
-<main class="section">
-<div class="container">
-<h1>Programas</h1>
-<div class="programas-list">
-
-<div class="programa-item">
-<img src="assets/bombacha-whatsapp-conversa.webp">
-<div class="programa-info">
-<h3>Bombacha WhatsApp</h3>
-<p>WhatsApp mais prático para Windows, com janela própria e suporte a perfis separados.</p>
-</div>
-<a class="button button-primary" href="bombacha-whatsapp.html">Ver detalhes</a>
-</div>
-
-<div class="programa-item">
-<img src="assets/cyberdrop-helper.webp">
-<div class="programa-info">
-<h3>Cyberdrop Browser Helper</h3>
-<p>Downloader integrado ao navegador para baixar vídeos e arquivos compatíveis.</p>
-</div>
-<a class="button button-primary" href="cyberdrop-helper.html">Ver detalhes</a>
-</div>
-
-<div class="programa-item">
-<img src="assets/mascote.webp">
-<div class="programa-info">
-<h3>Jogos na TV</h3>
-<p>Consulte jogos de hoje, amanhã e próximos dias com horários e canais.</p>
-</div>
-<a class="button button-primary" href="jogos-na-tv.html">Ver detalhes</a>
-</div>
-
-<div class="programa-item">
-<img src="assets/quickdrop.png">
-<div class="programa-info">
-<h3>QuickDrop</h3>
-<p>Facilita o uso de arquivos baixados com acesso rápido às principais ações.</p>
-</div>
-<a class="button button-primary" href="quickdrop.html">Ver detalhes</a>
-</div>
-
-<div class="programa-item">
-<img src="assets/recorta-facil.webp">
-<div class="programa-info">
-<h3>Recorta Fácil</h3>
-<p>Recorte vídeos, extraia MP3 e exporte arquivos de forma simples.</p>
-</div>
-<a class="button button-primary" href="recorta-facil.html">Ver detalhes</a>
-</div>
-
-</div>
-</div>
-</main>
-</body>
-</html>
+<header class="topbar"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="assets/logo-256.png"><span><strong>Bombacha</strong><small>Ferramentas</small></span></a><nav><a href="catalogo.html">Programas</a><a href="extensoes.html">Extensões</a><a href="apoie.html">Apoie</a></nav></div></header>
+<main class="section"><div class="container"><h1>Programas</h1>
+<style>
+.lista-produtos{display:flex;flex-direction:column;gap:14px;margin-top:25px}.produto{background:#fff;border-radius:18px;padding:16px 20px;display:flex;align-items:center;gap:18px;box-shadow:0 5px 18px rgba(0,0,0,.08)}.produto img{width:64px;height:64px;object-fit:contain}.produto-info{flex:1}.produto h3{margin:0 0 6px}.produto p{margin:0}.produto a{white-space:nowrap}@media(max-width:700px){.produto{flex-wrap:wrap}.produto a{width:100%;text-align:center}}
+</style>
+<div class="lista-produtos">
+<div class="produto"><img src="assets/bombacha-whatsapp-conversa.webp"><div class="produto-info"><h3>Bombacha WhatsApp</h3><p>WhatsApp mais prático para Windows, com janela própria e suporte a perfis separados.</p></div><a class="button button-primary" href="bombacha-whatsapp.html">Ver detalhes</a></div>
+<div class="produto"><img src="assets/cyberdrop-helper.webp"><div class="produto-info"><h3>Cyberdrop Browser Helper</h3><p>Downloader integrado ao navegador para baixar vídeos e arquivos compatíveis.</p></div><a class="button button-primary" href="cyberdrop-helper.html">Ver detalhes</a></div>
+<div class="produto"><img src="assets/logo-256.png"><div class="produto-info"><h3>Jogos na TV</h3><p>Consulte jogos de hoje, amanhã e próximos dias com horários e canais.</p></div><a class="button button-primary" href="jogos-na-tv.html">Ver detalhes</a></div>
+<div class="produto"><img src="assets/quickdrop.png"><div class="produto-info"><h3>QuickDrop</h3><p>Utilitário Windows que facilita o uso de arquivos baixados.</p></div><a class="button button-primary" href="quickdrop.html">Ver detalhes</a></div>
+<div class="produto"><img src="assets/recorta-facil.webp"><div class="produto-info"><h3>Recorta Fácil</h3><p>Recorte vídeos, extraia MP3 e exporte arquivos de forma simples.</p></div><a class="button button-primary" href="recorta-facil.html">Ver detalhes</a></div>
+</div></div></main></body></html>
