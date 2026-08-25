@@ -361,3 +361,75 @@ footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
  .simple-card h3{font-size:22px!important;}
  .simple-card{padding:18px!important;}
 }
+
+
+/* Ajuste final: catálogo compacto */
+.catalog-card{
+  min-height:0!important;
+  height:auto!important;
+}
+.catalog-card-program{
+  min-height:360px!important;
+}
+.catalog-visual{
+  height:150px!important;
+}
+.catalog-content{
+  padding:18px 20px!important;
+  gap:8px!important;
+}
+.catalog-content h3{
+  margin:6px 0!important;
+  font-size:28px!important;
+}
+.catalog-content p{
+  margin:0 0 12px!important;
+  font-size:14px!important;
+}
+.catalog-content .button{
+  margin-top:4px!important;
+}
+
+/* Ícones compactos IA TV VD */
+.hero-meta span, .catalog-tag{
+  font-size:11px!important;
+}
+.carousel-card .icon,
+.extension-icon,
+.catalog-icon{
+  transform:scale(.75);
+}
+
+/* Caixa apoio restaurada */
+.support-home{
+  padding:40px 20px;
+}
+.support-box{
+  max-width:900px;
+  margin:auto;
+  background:#1a100a;
+  color:white;
+  border-radius:24px;
+  padding:35px;
+}
+.support-box h2{
+  margin:10px 0;
+}
+.support-box p{
+  margin-bottom:20px;
+}
+
+@media(max-width:700px){
+ .catalog-card-program{
+   min-height:0!important;
+ }
+ .catalog-visual{
+   height:120px!important;
+ }
+ .catalog-content h3{
+   font-size:24px!important;
+ }
+ .support-box{
+   padding:25px;
+ }
+}
