@@ -465,3 +465,14 @@ footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
 .feature-icon {
     transform: scale(.75);
 }
+
+/* Ajustes Bombacha Ferramentas 2026 */
+.simple-list{display:grid;gap:16px}
+.simple-card{padding:18px!important;border-radius:18px}
+.simple-card h3{margin-top:0}
+.hero .icon,.feature-icon{transform:scale(.75)}
+@media(max-width:700px){
+.container{width:min(100% - 24px,1180px)}
+.simple-card{padding:15px!important}
+.topbar nav{gap:12px;flex-wrap:wrap}
+}
