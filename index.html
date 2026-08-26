@@ -13,9 +13,9 @@
   <meta property="og:type" content="website">
   <title>Bombacha Ferramentas — Site oficial</title>
   <link rel="icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="estilos.css?v=20260819-cyberdrop-2">
-  <script src="config.js?v=20260819-cyberdrop-2" defer></script>
-  <script src="app.js?v=20260819-cyberdrop-2" defer></script>
+  <link rel="stylesheet" href="estilos.css?v=20260825-hub-1">
+  <script src="config.js?v=20260825-hub-1" defer></script>
+  <script src="app.js?v=20260825-hub-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -30,8 +30,10 @@
       <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">☰</button>
 
       <nav id="menu-principal" aria-label="Menu principal">
-        <a href="catalogo.html">Programas</a>
-        <a href="catalogo.html#extensoes">Extensões</a>
+        <a href="#inicio">Início</a>
+        <a href="programas.html">Programas</a>
+        <a href="extensoes.html">Extensões</a>
+        <a href="apoie.html">Apoie</a>
       </nav>
 
       <a class="button button-small" href="recorta-facil.html">Conhecer Recorta Fácil</a>
@@ -47,8 +49,9 @@
           <p>Aqui você encontra nossos programas e extensões que vão trazer mais praticidade para sua navegação!</p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="catalogo.html">Ver programas</a>
-            <a class="button button-ghost" href="catalogo.html#extensoes">Ver extensões</a><a class="button button-support" href="apoie.html">Apoie o projeto</a>
+            <a class="button button-primary" href="programas.html">Ver programas</a>
+            <a class="button button-ghost" href="extensoes.html">Ver extensões</a>
+            <a class="button button-support" href="apoie.html">Apoie o projeto</a>
           </div>
 
           <div class="hero-meta">
@@ -78,79 +81,59 @@
           <p>Conheça os programas já publicados pela Bombacha Ferramentas.</p>
         </div>
 
-        <div class="carousel-shell reveal">
-          <button class="carousel-btn prev" data-target="programs-carousel" aria-label="Programa anterior">‹</button>
-          <div class="carousel-track programs-carousel">
-            <article class="catalog-card catalog-card-program">
-              <div class="catalog-visual">
-                <img src="assets/recorta-facil.webp" alt="Tela do programa Recorta Fácil" loading="lazy">
-              </div>
-              <div class="catalog-content">
-                
-                <h3>Recorta Fácil</h3>
-                <p>Corte vídeos e arquivos MP3 de forma rápida, fácil e intuitiva, sem rodeios e sem dificuldade.</p>
-                <a class="button button-primary" href="recorta-facil.html">Ver detalhes</a>
-              </div>
-            </article>
-
-            <article class="catalog-card catalog-card-program">
-              <div class="catalog-visual catalog-visual-grid">
-                <img src="assets/bombacha-whatsapp-perfis.webp" alt="Perfis do Bombacha WhatsApp" loading="lazy">
-                <img src="assets/bombacha-whatsapp-conversa.webp" alt="Abrir conversa por número no Bombacha WhatsApp" loading="lazy">
-              </div>
-              <div class="catalog-content">
-                
-                <h3>Bombacha WhatsApp</h3>
-                <p>WhatsApp mais prático para Windows, com janela própria, abertura por número e suporte a até dois perfis em abas diferentes.</p>
-                <a class="button button-primary" href="bombacha-whatsapp.html">Ver detalhes</a>
-              </div>
-            </article>
-
-            <article class="catalog-card catalog-card-program">
-              <div class="catalog-visual catalog-visual-icon">
-                <img class="catalog-icon" src="assets/quickdrop.png" alt="Ícone do QuickDrop" loading="lazy">
-              </div>
-              <div class="catalog-content">
-                
-                <h3>QuickDrop</h3>
-                <p>Baixou, apareceu, usou. Organize downloads com popup de ações rápidas para abrir, copiar, arrastar ou extrair arquivos.</p>
-                <a class="button button-primary" href="quickdrop.html">Ver detalhes</a>
-              </div>
-            </article>
-
-            <article class="catalog-card catalog-card-program">
-              <div class="catalog-visual catalog-visual-dark">
-                <img src="assets/cyberdrop-helper.webp" alt="Painel do Cyberdrop Browser Helper" loading="lazy">
-              </div>
-              <div class="catalog-content">
-                
-                <h3>Cyberdrop Browser Helper</h3>
-                <p>Baixe vídeos e arquivos de vários sites pelo navegador com um clique usando o botão “↓ Cyberdrop”.</p>
-                <a class="button button-primary" href="cyberdrop-helper.html">Ver detalhes</a>
-              </div>
-            </article>
-
-            <article class="catalog-card catalog-card-program">
-              <div class="catalog-visual catalog-visual-window">
-                <div class="mini-window">
-                  <div class="mini-window-bar"><span></span><span></span><span></span></div>
-                  <div class="mini-window-body">
-                    <img src="assets/logo-256.png" alt="Logo Bombacha" loading="lazy">
-                    <strong>Jogos na TV</strong>
-                    <small>Hoje • Amanhã • Próximos dias</small>
-                  </div>
-                </div>
-              </div>
-              <div class="catalog-content">
-                
-                <h3>Jogos na TV</h3>
-                <p>Consulte os jogos de hoje, amanhã e dos próximos dias, com horários e canais de transmissão.</p>
-                <a class="button button-primary" href="jogos-na-tv.html">Ver detalhes</a>
-              </div>
-            </article>
+        <div class="compact-list reveal">
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Bombacha WhatsApp</h3>
+              <p>WhatsApp mais prático para Windows, com janela própria, abertura por número e suporte a até dois perfis em abas diferentes.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="button button-primary button-small" href="bombacha-whatsapp.html">Ver detalhes</a>
+            </div>
           </div>
-          <button class="carousel-btn next" data-target="programs-carousel" aria-label="Próximo programa">›</button>
+
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Cyberdrop Browser Helper</h3>
+              <p>Baixe vídeos e arquivos de vários sites pelo navegador com um clique usando o botão “↓ Cyberdrop”.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="button button-primary button-small" href="cyberdrop-helper.html">Ver detalhes</a>
+            </div>
+          </div>
+
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Jogos na TV</h3>
+              <p>Consulte os jogos de hoje, amanhã e dos próximos dias, com horários e canais de transmissão.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="button button-primary button-small" href="jogos-na-tv.html">Ver detalhes</a>
+            </div>
+          </div>
+
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>QuickDrop</h3>
+              <p>Baixou, apareceu, usou. Popup com ações rápidas para abrir, copiar, arrastar ou extrair arquivos.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="button button-primary button-small" href="quickdrop.html">Ver detalhes</a>
+            </div>
+          </div>
+
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Recorta Fácil</h3>
+              <p>Corte vídeos e arquivos MP3 de forma rápida, fácil e intuitiva, sem rodeios e sem dificuldade.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="button button-primary button-small" href="recorta-facil.html">Ver detalhes</a>
+            </div>
+          </div>
         </div>
+
+        <p class="list-foot"><a class="list-foot-link" href="programas.html">Ver todos os programas →</a></p>
       </div>
     </section>
 
@@ -162,51 +145,53 @@
           <p>Ferramentas para instalar no navegador e usar com poucos cliques.</p>
         </div>
 
-        <div class="carousel-shell reveal">
-          <button class="carousel-btn prev" data-target="extensions-carousel" aria-label="Extensão anterior">‹</button>
-          <div class="carousel-track extensions-carousel">
-            <article class="catalog-card catalog-card-extension">
-              <div class="extension-symbol">IA</div>
-              <div class="catalog-content">
-                
-                <h3>Apitos de IA Bombacha</h3>
-                <p>Avisa quando uma resposta de IA termina e pode tocar um som discreto enquanto a resposta está sendo gerada.</p>
-                <a class="button button-primary" href="apitos-de-ia.html">Ver detalhes</a>
-              </div>
-            </article>
-
-            <article class="catalog-card catalog-card-extension">
-              <div class="extension-symbol">TV</div>
-              <div class="catalog-content">
-                
-                <h3>Jogos na TV · Bombacha</h3>
-                <p>Mostra jogos, horários e canais, pode emitir alertas antes das partidas e sincronizar preferências com o site.</p>
-                <a class="button button-primary" href="jogos-na-tv-extensao.html">Ver detalhes</a>
-              </div>
-            </article>
-
-            <article class="catalog-card catalog-card-extension">
-              <div class="extension-symbol">VD</div>
-              <div class="catalog-content">
-                
-                <h3>Bombacha Vídeos Download</h3>
-                <p>Extensão para baixar vídeos e páginas direto no navegador. A versão atual funciona melhor no Firefox.</p>
-                <a class="button button-primary" href="bombacha-videos-download.html">Ver detalhes</a>
-              </div>
-            </article>
-
-            <article class="catalog-card catalog-card-extension">
-              <div class="extension-symbol">⏱</div>
-              <div class="catalog-content">
-                
-                <h3>Timer do Galhofinha</h3>
-                <p>Reúne temporizador, alarme e cronômetro em uma extensão leve para o navegador.</p>
-                <a class="button button-primary" href="timer-do-galhofinha.html">Ver detalhes</a>
-              </div>
-            </article>
+        <div class="compact-list reveal">
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Apitos de IA Bombacha</h3>
+              <p>Avisa quando uma resposta de IA termina e pode tocar um som discreto enquanto a resposta está sendo gerada.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="store-link chrome" data-extension="apitos-ia-bombacha" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="apitos-ia-bombacha" data-browser="firefox" href="#">Firefox</a>
+            </div>
           </div>
-          <button class="carousel-btn next" data-target="extensions-carousel" aria-label="Próxima extensão">›</button>
+
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Bombacha Vídeos Download</h3>
+              <p>Extensão para baixar vídeos direto do navegador, com melhor experiência no Firefox.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="store-link chrome" data-extension="bombacha-videos-download" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="bombacha-videos-download" data-browser="firefox" href="#">Firefox</a>
+            </div>
+          </div>
+
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Jogos na TV · Bombacha</h3>
+              <p>Mostra jogos, horários e canais, pode emitir alertas antes das partidas e sincronizar preferências com o site.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="store-link chrome" data-extension="jogos-na-tv-bombacha" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="jogos-na-tv-bombacha" data-browser="firefox" href="#">Firefox</a>
+            </div>
+          </div>
+
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Timer do Galhofinha</h3>
+              <p>Reúne temporizador, alarme e cronômetro em uma extensão leve para o navegador.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="store-link chrome" data-extension="timer-do-galhofinha" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="timer-do-galhofinha" data-browser="firefox" href="#">Firefox</a>
+            </div>
+          </div>
         </div>
+
+        <p class="list-foot"><a class="list-foot-link" href="extensoes.html">Ver todas as extensões →</a></p>
       </div>
     </section>
   

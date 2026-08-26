@@ -1,110 +1,117 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Programas - Bombacha Ferramentas</title>
-<link rel="stylesheet" href="estilos.css">
-<style>
-.programas-list{
-display:flex;
-flex-direction:column;
-gap:14px;
-}
-.programa-item{
-display:flex;
-align-items:center;
-gap:20px;
-background:#fff;
-border-radius:18px;
-padding:18px;
-box-shadow:0 4px 14px rgba(0,0,0,.08);
-}
-.programa-item img{
-width:70px;
-height:70px;
-object-fit:contain;
-flex-shrink:0;
-}
-.programa-info{flex:1}
-.programa-info h3{margin:0 0 8px}
-.programa-info p{margin:0;color:#555}
-.programa-item a{
-white-space:nowrap;
-}
-@media(max-width:650px){
-.programa-item{
-align-items:flex-start;
-flex-direction:column;
-}
-.programa-item a{width:100%;text-align:center}
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Todos os programas oficiais da Bombacha Ferramentas para Windows, em ordem alfabética.">
+  <meta name="theme-color" content="#1a100a">
+  <link rel="canonical" href="https://viktor1944.github.io/bombacha-ferramentas/programas.html">
+  <meta property="og:title" content="Programas — Bombacha Ferramentas">
+  <meta property="og:description" content="Todos os programas oficiais da Bombacha Ferramentas para Windows.">
+  <meta property="og:image" content="https://viktor1944.github.io/bombacha-ferramentas/assets/logo.png">
+  <meta property="og:url" content="https://viktor1944.github.io/bombacha-ferramentas/programas.html">
+  <meta property="og:type" content="website">
+  <title>Programas — Bombacha Ferramentas</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="estilos.css?v=20260825-hub-1">
+  <script src="config.js?v=20260825-hub-1" defer></script>
+  <script src="app.js?v=20260825-hub-1" defer></script>
 </head>
 <body>
-<header class="topbar">
-<div class="container nav-wrap">
-<a class="brand" href="index.html">Bombacha Ferramentas</a>
-<nav>
-<a href="programas.html">Programas</a>
-<a href="extensoes.html">Extensões</a>
-<a href="apoie.html">Apoie</a>
-</nav>
-</div>
-</header>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<main class="section">
-<div class="container">
-<h1>Programas</h1>
-<div class="programas-list">
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Bombacha Ferramentas — início">
+        <img src="assets/logo-256.png" alt="Mascote da Bombacha Ferramentas">
+        <span><strong>Bombacha</strong><small>Ferramentas</small></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">☰</button>
+      <nav id="menu-principal" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="programas.html">Programas</a>
+        <a href="extensoes.html">Extensões</a>
+        <a href="apoie.html">Apoie</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="programa-item">
-<img src="assets/icons/whatsapp.png">
-<div class="programa-info">
-<h3>Bombacha WhatsApp</h3>
-<p>WhatsApp mais prático para Windows, com janela própria e suporte a perfis separados.</p>
-</div>
-<a class="button button-primary" href="bombacha-whatsapp.html">Ver detalhes</a>
-</div>
+  <main id="conteudo">
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">PROGRAMAS</span>
+          <h1>Programas</h1>
+          <p>Todos os programas oficiais da Bombacha Ferramentas para Windows, em ordem alfabética.</p>
+        </div>
 
-<div class="programa-item">
-<img src="assets/icons/cyberdrop.png">
-<div class="programa-info">
-<h3>Cyberdrop Browser Helper</h3>
-<p>Downloader integrado ao navegador para baixar vídeos e arquivos compatíveis.</p>
-</div>
-<a class="button button-primary" href="cyberdrop-helper.html">Ver detalhes</a>
-</div>
+        <div class="compact-list reveal">
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Bombacha WhatsApp</h3>
+              <p>WhatsApp mais prático para Windows, com janela própria e suporte a até dois perfis em abas diferentes.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="button button-primary button-small" href="bombacha-whatsapp.html">Ver detalhes</a>
+            </div>
+          </div>
 
-<div class="programa-item">
-<img src="assets/icons/tv.png">
-<div class="programa-info">
-<h3>Jogos na TV</h3>
-<p>Consulte jogos de hoje, amanhã e próximos dias com horários e canais.</p>
-</div>
-<a class="button button-primary" href="jogos-na-tv.html">Ver detalhes</a>
-</div>
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Cyberdrop Browser Helper</h3>
+              <p>Downloader integrado ao navegador para baixar vídeos e arquivos compatíveis.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="button button-primary button-small" href="cyberdrop-helper.html">Ver detalhes</a>
+            </div>
+          </div>
 
-<div class="programa-item">
-<img src="assets/icons/quickdrop.png">
-<div class="programa-info">
-<h3>QuickDrop</h3>
-<p>Facilita o uso de arquivos baixados com acesso rápido às principais ações.</p>
-</div>
-<a class="button button-primary" href="quickdrop.html">Ver detalhes</a>
-</div>
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Jogos na TV</h3>
+              <p>Consulte jogos de hoje, amanhã e próximos dias com horários e canais.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="button button-primary button-small" href="jogos-na-tv.html">Ver detalhes</a>
+            </div>
+          </div>
 
-<div class="programa-item">
-<img src="assets/icons/recorta.png">
-<div class="programa-info">
-<h3>Recorta Fácil</h3>
-<p>Recorte vídeos, extraia MP3 e exporte arquivos de forma simples.</p>
-</div>
-<a class="button button-primary" href="recorta-facil.html">Ver detalhes</a>
-</div>
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>QuickDrop</h3>
+              <p>Utilitário Windows que facilita o uso de arquivos baixados, com popup de ações rápidas.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="button button-primary button-small" href="quickdrop.html">Ver detalhes</a>
+            </div>
+          </div>
 
-</div>
-</div>
-</main>
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Recorta Fácil</h3>
+              <p>Recorte vídeos, extraia MP3 e exporte arquivos de forma simples.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="button button-primary button-small" href="recorta-facil.html">Ver detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="container footer-grid">
+      <a class="brand brand-footer" href="index.html" aria-label="Bombacha Ferramentas — início">
+        <img src="assets/logo-256.png" alt="Mascote da Bombacha Ferramentas">
+        <span><strong>Bombacha</strong><small>Ferramentas</small></span>
+      </a>
+      <p class="footer-contact">Contato: <a data-contact-email href="mailto:victor870@bol.com.br">victor870@bol.com.br</a></p>
+      <div class="footer-links">
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

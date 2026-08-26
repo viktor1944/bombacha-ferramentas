@@ -1,30 +1,111 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Extensões - Bombacha Ferramentas</title>
-<link rel="stylesheet" href="estilos.css">
-<style>
-.lista{display:flex;flex-direction:column;gap:14px}
-.item{display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:18px;padding:22px 28px}
-.info{flex:1}
-.info h3{margin:0 0 8px}
-.info p{margin:0}
-@media(max-width:700px){.item{gap:15px;flex-direction:column;align-items:flex-start}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Extensões oficiais da Bombacha Ferramentas para Chrome e Firefox.">
+  <meta name="theme-color" content="#1a100a">
+  <link rel="canonical" href="https://viktor1944.github.io/bombacha-ferramentas/extensoes.html">
+  <meta property="og:title" content="Extensões — Bombacha Ferramentas">
+  <meta property="og:description" content="Extensões oficiais da Bombacha Ferramentas para Chrome e Firefox.">
+  <meta property="og:image" content="https://viktor1944.github.io/bombacha-ferramentas/assets/logo.png">
+  <meta property="og:url" content="https://viktor1944.github.io/bombacha-ferramentas/extensoes.html">
+  <meta property="og:type" content="website">
+  <title>Extensões — Bombacha Ferramentas</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="estilos.css?v=20260825-hub-1">
+  <script src="config.js?v=20260825-hub-1" defer></script>
+  <script src="app.js?v=20260825-hub-1" defer></script>
 </head>
 <body>
-<header class="topbar"><div class="container nav-wrap">
-<a class="brand" href="index.html">Bombacha Ferramentas</a>
-<nav><a href="catalogo.html">Programas</a><a href="extensoes.html">Extensões</a><a href="apoie.html">Apoie</a></nav>
-</div></header>
-<main class="section"><div class="container">
-<h1>Extensões</h1>
-<div class="lista">
-<div class="item"><div class="info"><h3>Apitos de IA Bombacha</h3><p>Extensão com recursos de inteligência artificial para facilitar tarefas.</p></div><a class="button button-primary" href="apitos-de-ia.html">Ver detalhes</a></div>
-<div class="item"><div class="info"><h3>Bombacha Vídeos Download</h3><p>Baixe vídeos através do navegador de forma simples.</p></div><a class="button button-primary" href="bombacha-videos-download.html">Ver detalhes</a></div>
-<div class="item"><div class="info"><h3>Jogos na TV · Bombacha</h3><p>Consulte jogos e informações pelo navegador.</p></div><a class="button button-primary" href="jogos-na-tv-extensao.html">Ver detalhes</a></div>
-<div class="item"><div class="info"><h3>Timer do Galhofinha</h3><p>Timer simples e rápido para uso diário.</p></div><a class="button button-primary" href="timer-do-galhofinha.html">Ver detalhes</a></div>
-</div></div></main>
-</body></html>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Bombacha Ferramentas — início">
+        <img src="assets/logo-256.png" alt="Mascote da Bombacha Ferramentas">
+        <span><strong>Bombacha</strong><small>Ferramentas</small></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">☰</button>
+      <nav id="menu-principal" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="programas.html">Programas</a>
+        <a href="extensoes.html">Extensões</a>
+        <a href="apoie.html">Apoie</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">EXTENSÕES</span>
+          <h1>Extensões</h1>
+          <p>Extensões oficiais da Bombacha Ferramentas para o navegador.</p>
+        </div>
+
+        <div class="compact-list reveal">
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Apitos de IA Bombacha</h3>
+              <p>Extensão com recursos de inteligência artificial para facilitar tarefas.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="store-link chrome" data-extension="apitos-ia-bombacha" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="apitos-ia-bombacha" data-browser="firefox" href="#">Firefox</a>
+            </div>
+          </div>
+
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Bombacha Vídeos Download</h3>
+              <p>Baixe vídeos através do navegador de forma simples, com melhor experiência no Firefox.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="store-link chrome" data-extension="bombacha-videos-download" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="bombacha-videos-download" data-browser="firefox" href="#">Firefox</a>
+            </div>
+          </div>
+
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Jogos na TV · Bombacha</h3>
+              <p>Consulte jogos, horários e canais direto pelo navegador, com alertas antes das partidas.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="store-link chrome" data-extension="jogos-na-tv-bombacha" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="jogos-na-tv-bombacha" data-browser="firefox" href="#">Firefox</a>
+            </div>
+          </div>
+
+          <div class="compact-list-item">
+            <div class="compact-list-info">
+              <h3>Timer do Galhofinha</h3>
+              <p>Timer, alarme e cronômetro reunidos em uma extensão leve e rápida.</p>
+            </div>
+            <div class="compact-list-actions">
+              <a class="store-link chrome" data-extension="timer-do-galhofinha" data-browser="chrome" href="#">Chrome</a>
+              <a class="store-link firefox" data-extension="timer-do-galhofinha" data-browser="firefox" href="#">Firefox</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape">
+    <div class="container footer-grid">
+      <a class="brand brand-footer" href="index.html" aria-label="Bombacha Ferramentas — início">
+        <img src="assets/logo-256.png" alt="Mascote da Bombacha Ferramentas">
+        <span><strong>Bombacha</strong><small>Ferramentas</small></span>
+      </a>
+      <p class="footer-contact">Contato: <a data-contact-email href="mailto:victor870@bol.com.br">victor870@bol.com.br</a></p>
+      <div class="footer-links">
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
