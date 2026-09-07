@@ -17,18 +17,18 @@ window.BOMBACHA_CONFIG = {
     },
     BOMBACHA_WHATSAPP: {
       NAME: "Bombacha WhatsApp",
-      DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/latest/download/Bombacha_WhatsApp_Setup.exe",
-      VERSION: "Mais recente",
-      FILE_SIZE: "Varia conforme a versão",
-      UPDATED_AT: "Atualização automática",
+      DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/bombachaultima/Bombacha_WhatsApp_Setup.exe",
+      VERSION: "6.0.0",
+      FILE_SIZE: "108 MB",
+      UPDATED_AT: "07/09/2026",
       PLATFORM: "Windows 10 e 11"
     },
     QUICKDROP: {
       NAME: "QuickDrop",
-      DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/quickdrop-v2.0.1/QuickDrop_v2.0.1_Portable.zip",
-      VERSION: "2.0.1 CLEAN",
-      FILE_SIZE: "53,0 MB",
-      UPDATED_AT: "16/08/2026",
+      DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/quickdrop/QuickDrop2.0.3.zip",
+      VERSION: "2.0.3",
+      FILE_SIZE: "A CONFIRMAR",
+      UPDATED_AT: "07/09/2026",
       PLATFORM: "Windows — portátil"
     },
     CYBERDROP_HELPER: {
