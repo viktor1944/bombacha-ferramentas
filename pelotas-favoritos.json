@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "description": "Ordem de qualidade sugerida pelo Bombacha Pelotas. Cada usuário pode escolher sua ordem pessoal arrastando os cartões.",
+  "sites": [
+    {
+      "title": "ColaTV",
+      "url": "https://colatv52.live/"
+    },
+    {
+      "title": "PirloTV",
+      "url": "https://pirlotv.la/"
+    },
+    {
+      "title": "SóColiveZah",
+      "url": "https://socolivezah.tv/"
+    },
+    {
+      "title": "FintTV",
+      "url": "https://finttv.in/"
+    },
+    {
+      "title": "VIPBox Football",
+      "url": "https://www.vipboxtv.sk/football-stream"
+    },
+    {
+      "title": "HalaStream",
+      "url": "https://halastream.st/soccer"
+    },
+    {
+      "title": "TVApp",
+      "url": "https://tvapp1.pk/"
+    },
+    {
+      "title": "LiveSports808",
+      "url": "https://pt6.livesports808.st/?hl=id-ID"
+    }
+  ]
+}
