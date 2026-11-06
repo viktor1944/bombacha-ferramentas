@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "description": "Ordem de qualidade sugerida pelo Bombacha Pelotas. Cada usuário pode escolher sua ordem pessoal arrastando os cartões.",
+  "version": 4,
+  "description": "Ordem de qualidade sugerida pelo Bombacha Pelotas, com dez favoritos. Faixa VPN no PirloTV, FintTV, Rede Canais TV e LiveTV. Cada pessoa pode reorganizar localmente.",
   "sites": [
     {
       "title": "ColaTV",
@@ -33,6 +33,14 @@
     {
       "title": "LiveSports808",
       "url": "https://pt6.livesports808.st/?hl=id-ID"
+    },
+    {
+      "title": "Rede Canais TV",
+      "url": "https://redecanaistv.by/"
+    },
+    {
+      "title": "LiveTV",
+      "url": "https://livetv-ru17.me/dex/allupcoming/"
     }
   ]
 }

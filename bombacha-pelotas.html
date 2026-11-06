@@ -33,7 +33,7 @@
  .mascot-wrap img{height:275px;max-width:100%;transform:none;object-position:center}
 }
 
-/* 1.5.0: classificação individual arrastável, oito favoritos em duas linhas. */
+/* 1.5.0: classificação individual arrastável, dez favoritos em duas linhas. */
 .sites{grid-template-columns:repeat(4,minmax(0,1fr))}
 .site-card{min-width:0;position:relative;display:flex;flex-direction:column;cursor:grab;transition:opacity .15s ease}
 .site-card.dragging,.edit-row.dragging{opacity:.42}
@@ -56,7 +56,7 @@
 @media(prefers-reduced-motion:reduce){.site,.site-card{transition:none}}
 
 
-/* Bombacha Pelotas 1.7.0 — mascote mais alto e links oficiais de apoio. */
+/* Bombacha Pelotas 1.8.1 — mascote mais alto e links oficiais de apoio. */
 .hero{height:526px}
 .hero-inner{grid-template-columns:minmax(0,43%) minmax(0,57%);padding:0 32px;align-items:center;overflow:hidden}
 .mascot-wrap{height:100%;align-self:stretch;justify-content:center;align-items:flex-start;overflow:hidden;padding-top:4px}
@@ -85,12 +85,31 @@
 @media(max-width:1100px){.hero-copy h1{font-size:clamp(52px,7vw,79px)}.hero-inner{grid-template-columns:minmax(0,39%) minmax(0,61%)}.hero-actions .hero-link{padding:10px 12px}.project-promo{margin:24px 20px 30px}.promo-buttons{flex-direction:column}}
 @media(max-width:720px){.toplink{display:none}.hero{height:auto;min-height:610px}.hero-inner{display:flex;flex-direction:column-reverse;padding:24px 18px 0;gap:10px;overflow:visible}.hero-copy{text-align:center;padding:0}.hero-copy h1{font-size:clamp(49px,11.7vw,74px)}.hero-actions{justify-content:center;gap:8px}.hero-actions .hero-link{font-size:10px;padding:11px 12px}.mascot-wrap{width:100%;min-height:270px;height:270px;align-items:flex-start;overflow:hidden;justify-content:center;padding-top:0}.mascot-wrap img{height:360px;max-width:100%;max-height:none;transform:none;object-position:top center;mask-image:none}.project-promo{flex-direction:column;text-align:center;padding:20px 16px;margin:20px 15px 24px}.promo-buttons{width:100%;justify-content:center}.promo-buttons a{white-space:normal}}
 
+
+/* 1.8.1 — indicação VPN discreta sem comprometer os controles de ranking. */
+.vpn-ribbon{position:absolute;z-index:4;left:50%;transform:translateX(-50%);top:9px;background:#7c3aed;color:#fff;border:1px solid #cbb9ff;border-radius:7px;padding:5px 11px;font-size:10px;font-weight:950;letter-spacing:.07em;box-shadow:0 3px 13px #170e35;white-space:nowrap;cursor:pointer}
+.vpn-ribbon:hover{background:#9955fa}
+.site-card:has(.vpn-ribbon)>.site{padding-top:52px}
+.vpn-help-top{background:#49216b;border:1px solid #ab77ea;color:#f7eaff}
+.vpn-help-top:hover{background:#67328e}
+.hero-link.vpn-link{background:#5e2b87;color:#fff;border:1px solid #bc84ef}
+.hero-link.vpn-link:hover{background:#8142ae}
+.vpn-info{max-width:1430px;margin:28px auto 10px;display:flex;align-items:center;gap:20px;padding:19px 24px;background:linear-gradient(110deg,#271844,#102d43);border:1px solid #9066c8;border-radius:18px}
+.vpn-info-symbol{font-size:41px;line-height:1}
+.vpn-info>div:nth-child(2){flex:1}
+.vpn-info h2{font-size:24px;margin:4px 0 6px;color:#f3e6ff}
+.vpn-info p{margin:0;font-size:13px;line-height:1.55;color:#cbd5e6}
+.vpn-info-cta{border:1px solid #ad82ef;background:#6a37a4;border-radius:10px;white-space:nowrap;padding:12px;font-size:12px;font-weight:900;color:#fff}
+.vpn-info-cta:hover{background:#8755c3}
+@media(max-width:1100px){.vpn-info{margin:20px}.vpn-help-top{display:none}}
+@media(max-width:720px){.vpn-info{margin:16px;flex-direction:column;text-align:center}.vpn-info-cta{white-space:normal}.vpn-ribbon{font-size:9px;padding:4px 7px}.site-card:has(.vpn-ribbon)>.site{padding-top:52px}}
+
 </style>
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="bombacha-pelotas.html" aria-label="Página inicial do Bombacha Pelotas"><span class="brand-ball" aria-hidden="true">⚽</span><span>BOMBACHA <strong>PELOTAS</strong></span></a>
-    <nav class="topright" aria-label="Ações"><span class="live"><i></i> FUTEBOL AO VIVO</span><a class="toplink support-link" href="https://viktor1944.github.io/bombacha-ferramentas/apoie.html" target="_blank" rel="noopener noreferrer">♥ Apoie o projeto</a></nav>
+    <nav class="topright" aria-label="Ações"><span class="live"><i></i> FUTEBOL AO VIVO</span><a class="toplink vpn-help-top" href="bombacha-pelotas-vpn.html">🔒 Guia de VPN</a><a class="toplink support-link" href="https://viktor1944.github.io/bombacha-ferramentas/apoie.html" target="_blank" rel="noopener noreferrer">♥ Apoie o projeto</a></nav>
   </header>
   <main>
     <section class="hero" aria-label="Boas-vindas">
@@ -105,7 +124,7 @@
           <p class="hero-description">Seus sites de futebol reunidos numa página inicial, na ordem que você escolher.</p>
           <div class="hero-actions">
             <a class="hero-link" href="#favoritos">★ VER FAVORITOS <span aria-hidden="true">↓</span></a>
-            <a class="hero-link donate-link" href="https://viktor1944.github.io/bombacha-ferramentas/apoie.html" target="_blank" rel="noopener noreferrer">♥ APOIE O PROJETO ↗</a>
+            <a class="hero-link vpn-link" href="bombacha-pelotas-vpn.html">🔒 COMO ATIVAR VPN ↗</a><a class="hero-link donate-link" href="https://viktor1944.github.io/bombacha-ferramentas/apoie.html" target="_blank" rel="noopener noreferrer">♥ APOIE O PROJETO ↗</a>
             <a class="hero-link official-link" href="https://viktor1944.github.io/bombacha-ferramentas/" target="_blank" rel="noopener noreferrer">🧉 BOMBACHA FERRAMENTAS ↗</a>
           </div>
         </div>
@@ -119,12 +138,17 @@
       <div class="sites" id="sites"><div class="loading">Carregando seus favoritos…</div></div>
       <div class="status" id="status" role="status" aria-live="polite"></div>
     </section>
+    <section class="vpn-info" aria-label="Dicas para acesso com VPN">
+      <div class="vpn-info-symbol" aria-hidden="true">🔒</div>
+      <div><span class="eyebrow">GUIA OPCIONAL</span><h2>Sites com indicação de VPN</h2><p>Os cartões do <strong>PirloTV</strong>, <strong>FintTV</strong> e <strong>Rede Canais TV</strong> e <strong>LiveTV</strong> têm uma faixa VPN. Ela é informativa: não é obrigatório instalar uma VPN para usar a página. Se houver problema de acesso, confira nosso passo a passo e os cuidados de privacidade.</p></div>
+      <a class="vpn-info-cta" href="bombacha-pelotas-vpn.html">VER COMO ATIVAR VPN ↗</a>
+    </section>
     <section class="project-promo" aria-label="Conheça e apoie a Bombacha Ferramentas">
       <div class="promo-symbol" aria-hidden="true">🧉⚽</div>
       <div class="promo-description"><span class="eyebrow">PROJETOS INDEPENDENTES</span><h2>Conheça a Bombacha Ferramentas</h2><p>Descubra outros programas e extensões gratuitos. Se este navegador for útil, considere apoiar sua manutenção e futuras melhorias.</p></div>
       <div class="promo-buttons"><a class="official-cta" href="https://viktor1944.github.io/bombacha-ferramentas/" target="_blank" rel="noopener noreferrer">CONHECER O SITE ↗</a><a class="donate-cta" href="https://viktor1944.github.io/bombacha-ferramentas/apoie.html" target="_blank" rel="noopener noreferrer">♥ APOIAR O PROJETO ↗</a></div>
     </section>
-    <footer><div class="footer-features"><span>⚽ Futebol ao vivo</span><span>★ Favoritos organizados</span><span>↻ Favoritos sincronizados</span></div><p>Bombacha Pelotas 1.7.0 · O navegador não transmite conteúdo próprio e não é afiliado aos sites indicados.</p></footer>
+    <footer><div class="footer-features"><span>⚽ Futebol ao vivo</span><span>★ Favoritos organizados</span><span>↻ Favoritos sincronizados</span></div><p>Bombacha Pelotas 1.8.1 · O navegador não transmite conteúdo próprio e não é afiliado aos sites indicados.</p></footer>
   </main>
   <script>
 /* Bombacha Pelotas — Home oficial hospedada no GitHub Pages. */
@@ -133,6 +157,7 @@ const REMOTE_LIST = 'https://viktor1944.github.io/bombacha-ferramentas/pelotas-f
 const STORAGE_SITES = 'bombacha-pelotas-site-list-v2';
 const STORAGE_ORDER = 'bombacha-pelotas-user-order-v2';
 const STORAGE_CHECK = 'bombacha-pelotas-last-sync-v2';
+const STORAGE_SEED = 'bombacha-pelotas-seed-version';
 const DEFAULTS = [
  {title:'ColaTV',url:'https://colatv52.live/'},
  {title:'PirloTV',url:'https://pirlotv.la/'},
@@ -141,7 +166,9 @@ const DEFAULTS = [
  {title:'VIPBox Football',url:'https://www.vipboxtv.sk/football-stream'},
  {title:'HalaStream',url:'https://halastream.st/soccer'},
  {title:'TVApp',url:'https://tvapp1.pk/'},
- {title:'LiveSports808',url:'https://pt6.livesports808.st/?hl=id-ID'}
+ {title:'LiveSports808',url:'https://pt6.livesports808.st/?hl=id-ID'},
+ {title:'Rede Canais TV',url:'https://redecanaistv.by/'},
+ {title:'LiveTV',url:'https://livetv-ru17.me/dex/allupcoming/'}
 ];
 const $ = id => document.getElementById(id);
 function getSaved(key){ try { return JSON.parse(localStorage.getItem(key)); } catch(_) {return null;} }
@@ -169,6 +196,13 @@ function sorted(list){
  ).map(v=>v.site);
 }
 let sites=sorted((()=>{try{return clean(getSaved(STORAGE_SITES)||DEFAULTS);}catch(_){return clean(DEFAULTS);}})());
+if(Number(localStorage.getItem(STORAGE_SEED)||0)<4){
+  for(const item of DEFAULTS){
+    if(!sites.some(x=>x.url===item.url)){sites.push({...item});}
+  }
+  sites=sorted(sites);save(STORAGE_SITES,sites);
+  try{localStorage.setItem(STORAGE_SEED,'4');}catch(_){}
+}
 let dragging=null;
 function status(text){const el=$('status');if(el)el.textContent=text;}
 function render(){
@@ -177,6 +211,8 @@ function render(){
  sites.forEach((site,i)=>{
   const card=document.createElement('div');card.className='site-card';card.draggable=true;
   const rank=document.createElement('span');rank.className='site-rank';rank.textContent=String(i+1).padStart(2,'0')+'º';
+  const isVpn=['pirlotv.la','finttv.in','redecanaistv.by','livetv-ru17.me'].includes(new URL(site.url).hostname.toLowerCase());
+  if(isVpn){const vpn=document.createElement('a');vpn.className='vpn-ribbon';vpn.textContent='🔒 VPN';vpn.href='bombacha-pelotas-vpn.html';vpn.title='Saiba como configurar uma VPN (opcional)';vpn.addEventListener('click',e=>e.stopPropagation());card.append(vpn);}
   const controls=document.createElement('div');controls.className='rank-controls';
   const grip=document.createElement('span');grip.className='drag-handle';grip.textContent='⠿';grip.title='Arraste para escolher sua ordem';
   const up=document.createElement('button');up.className='rank-arrow';up.type='button';up.textContent='↑';up.title='Subir';up.disabled=i===0;
@@ -210,7 +246,7 @@ async function refresh({silent=false}={}){
   let response;try{response=await fetch(REMOTE_LIST,{cache:'no-store',credentials:'omit',signal:c.signal});}finally{clearTimeout(timer);}
   if(!response.ok)throw Error('servidor HTTP '+response.status);
   const data=await response.json();
-  if(!data||Number(data.version)<2)throw Error('O JSON publicado ainda não é a versão 2.');
+  if(!data||Number(data.version)<4)throw Error('O JSON publicado ainda não é a versão 4.');
   sites=sorted(clean(data.sites));save(STORAGE_SITES,sites);save(STORAGE_CHECK,Date.now());render();
   status('Favoritos atualizados a partir da lista oficial. Sua ordem pessoal foi mantida.');
  }catch(error){if(!silent)status('Sem atualização: '+(error.message||error)+'. Mantivemos os links anteriores.');}
