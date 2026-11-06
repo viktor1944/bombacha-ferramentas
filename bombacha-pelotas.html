@@ -173,6 +173,12 @@
   .version-hero-cta {font-size:12px !important; padding:9px !important;}
   .hero-inner {min-height:585px !important; height:auto !important;}
 }
+
+/* Indicador da versão instalada na barra do navegador. A seta aponta para o topo. */
+.version-hero-subtitle{display:flex;align-items:flex-start;gap:8px;line-height:1.36}
+.version-hero-arrow{display:inline-block;color:#ffb347;font-size:30px;font-weight:900;line-height:.85;flex:0 0 30px;transform:translateY(-4px);text-shadow:0 2px 4px #0009}
+#version-hero-note{flex:1}
+@media(max-width:620px){.version-hero-subtitle{gap:7px}.version-hero-arrow{font-size:31px;flex-basis:31px}}
 </style>
 </head>
 <body>
@@ -193,9 +199,9 @@
       <div class="lights lights-left" aria-hidden="true"></div><div class="lights lights-right" aria-hidden="true"></div>
       <div class="stadium" aria-hidden="true"><div class="stadium-stands"></div><div class="pitch"><div class="center-circle"></div><div class="center-line"></div></div></div>
       <a class="version-hero-card" id="versao-atual" href="https://github.com/viktor1944/bombacha-ferramentas/releases/download/pelotas-v1.8.3/Bombacha_Pelotas_1.8.3_Setup.exe" title="Baixar a versão 1.8.3 do Bombacha Pelotas para Windows" rel="noopener noreferrer" target="_blank" download>
-  <span class="version-hero-label" id="version-hero-label">NOVA VERSÃO DISPONÍVEL</span>
-  <strong class="version-hero-title" id="version-hero-title">VERSÃO ATUAL: 1.8.3</strong>
-  <span class="version-hero-subtitle" id="version-hero-subtitle">Confira se esta é a versão do seu navegador!</span>
+  <span class="version-hero-label" id="version-hero-label">CONFIRA SUA VERSÃO</span>
+  <strong class="version-hero-title" id="version-hero-title">ÚLTIMA VERSÃO: 1.8.3</strong>
+  <span class="version-hero-subtitle" id="version-hero-subtitle"><span class="version-hero-arrow" aria-hidden="true">↗</span><span id="version-hero-note">Confira se esta é a sua versão do navegador Bombacha Pelotas. Olhe o número na barra superior!</span></span>
   <span class="version-hero-cta" id="version-hero-cta">⬇ BAIXAR INSTALADOR EXE</span>
 </a>
 <div class="hero-inner">
@@ -229,7 +235,7 @@
           </div>
         </div>
         <div class="download-browser-actions">
-          <a class="download-browser-button" href="https://github.com/viktor1944/bombacha-ferramentas/releases/download/Bombachapelotas/Bombacha_Pelotas_1.8.2_Setup.exe" target="_blank" rel="noopener noreferrer" data-i18n="downloadAction">⬇ BAIXAR BOMBACHA PELOTAS ↗</a>
+          <a class="download-browser-button" href="https://github.com/viktor1944/bombacha-ferramentas/releases/download/pelotas-v1.8.3/Bombacha_Pelotas_1.8.3_Setup.exe" target="_blank" rel="noopener noreferrer" data-i18n="downloadAction">⬇ BAIXAR BOMBACHA PELOTAS ↗</a>
           <small data-i18n="downloadNote">Download direto do EXE · Windows 64 bits</small>
         </div>
       </aside>
@@ -402,16 +408,16 @@ setInterval(()=>refresh({silent:true}),6*60*60*1000);
 /* Traduções do cartão de versão — preserva as 8 línguas da home. */
 (()=>{
 const msg={
-pt:['NOVA VERSÃO DISPONÍVEL','VERSÃO ATUAL: 1.8.3','Confira se esta é a versão do seu navegador!','⬇ BAIXAR INSTALADOR EXE'],
-en:['LATEST VERSION AVAILABLE','LATEST VERSION: 1.8.3','Check if your browser is up to date!','⬇ DOWNLOAD WINDOWS INSTALLER'],
-es:['NUEVA VERSIÓN DISPONIBLE','VERSIÓN ACTUAL: 1.8.3','¡Comprueba la versión de tu navegador!','⬇ DESCARGAR INSTALADOR'],
-fr:['NOUVELLE VERSION DISPONIBLE','VERSION ACTUELLE : 1.8.3','Vérifiez la version de votre navigateur !','⬇ TÉLÉCHARGER WINDOWS'],
-zh:['有新版本可用','最新版本：1.8.3','请检查您的浏览器版本！','⬇ 下载 WINDOWS 安装程序'],
-hi:['नया संस्करण उपलब्ध','नवीनतम संस्करण: 1.8.3','अपने ब्राउज़र का संस्करण जाँचें!','⬇ विंडोज इंस्टॉलर डाउनलोड'],
-ar:['إصدار جديد متاح','الإصدار الحالي: 1.8.3','تحقق من إصدار المتصفح لديك!','⬇ تنزيل برنامج التثبيت'],
-ru:['ДОСТУПНА НОВАЯ ВЕРСИЯ','ТЕКУЩАЯ ВЕРСИЯ: 1.8.3','Проверьте версию вашего браузера!','⬇ СКАЧАТЬ УСТАНОВЩИК']
+pt:['CONFIRA SUA VERSÃO','ÚLTIMA VERSÃO: 1.8.3','Confira se esta é a sua versão do navegador Bombacha Pelotas. Olhe o número na barra superior!','⬇ BAIXAR INSTALADOR EXE'],
+en:['CHECK YOUR VERSION','LATEST VERSION: 1.8.3','Check if this matches your Bombacha Pelotas browser version. Look at the top browser bar!','⬇ DOWNLOAD WINDOWS INSTALLER'],
+es:['COMPRUEBA TU VERSIÓN','ÚLTIMA VERSIÓN: 1.8.3','Comprueba si esta es tu versión de Bombacha Pelotas. ¡Mira el número en la barra superior!','⬇ DESCARGAR INSTALADOR'],
+fr:['VÉRIFIEZ VOTRE VERSION','DERNIÈRE VERSION : 1.8.3','Vérifiez si c’est votre version de Bombacha Pelotas. Regardez le numéro dans la barre supérieure !','⬇ TÉLÉCHARGER WINDOWS'],
+zh:['检查您的版本','最新版本：1.8.3','请检查是否与您的 Bombacha Pelotas 浏览器版本相同。请查看浏览器顶部栏中的版本号！','⬇ 下载 WINDOWS 安装程序'],
+hi:['अपना संस्करण जांचें','नवीनतम संस्करण: 1.8.3','जांचें कि क्या यही आपके Bombacha Pelotas ब्राउज़र का संस्करण है। ऊपर की पट्टी में संस्करण संख्या देखें!','⬇ विंडोज इंस्टॉलर डाउनलोड करें'],
+ar:['تحقق من إصدارك','أحدث إصدار: 1.8.3','تأكد من مطابقة إصدار متصفح Bombacha Pelotas لديك. انظر إلى رقم الإصدار في الشريط العلوي!','⬇ تنزيل برنامج التثبيت'],
+ru:['ПРОВЕРЬТЕ СВОЮ ВЕРСИЮ','ПОСЛЕДНЯЯ ВЕРСИЯ: 1.8.3','Проверьте, совпадает ли она с версией Bombacha Pelotas. Посмотрите номер в верхней панели браузера!','⬇ СКАЧАТЬ УСТАНОВЩИК']
 };
-const ids=['version-hero-label','version-hero-title','version-hero-subtitle','version-hero-cta'];
+const ids=['version-hero-label','version-hero-title','version-hero-note','version-hero-cta'];
 function apply(){const l=window.BombachaI18n?.current||'pt';const row=msg[l]||msg.pt;ids.forEach((id,i)=>{const e=document.getElementById(id);if(e)e.textContent=row[i]});}
 document.getElementById('language-picker')?.addEventListener('change',()=>setTimeout(apply,0));
 apply();
