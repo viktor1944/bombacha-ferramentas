@@ -1,0 +1,25 @@
+BOMBACHA FERRAMENTAS — SITE ATUALIZADO (BASE DO ZIP ENVIADO)
+
+Este pacote foi montado usando bombacha-pelotas-no-site(1).zip como base, mantendo a nova página Bombacha Pelotas criada no site principal.
+
+O QUE FOI ATUALIZADO:
+- index.html: texto e botão de download do navegador.
+- programas.html: texto e botão de download do navegador.
+- bombacha-pelotas-navegador.html: página de apresentação integrada com Cloudflare, botão de download, link para home, guia VPN e Telegram.
+- bombacha-pelotas.html: versão mais recente da página inicial esportiva, com 10 favoritos, botão de download EXE, seletor de 8 idiomas, aviso do Cloudflare e Telegram.
+- bombacha-pelotas-vpn.html: texto do Kotas com preço aproximado de R$ 6 (pode variar), explicação Cloudflare e remoção do bloco inferior 'Continue com o Bombacha Pelotas'.
+- pelotas-favoritos.json: versão 4 com os 10 sites.
+
+ONDE PUBLICAR:
+https://github.com/viktor1944/bombacha-ferramentas
+Clique em Add file > Upload files > Commit changes.
+
+RECOMENDAÇÃO: envie APENAS os arquivos do pacote de atualizações menores, preservando outros arquivos e pastas.
+Se preferir, o pacote completo preserva os 17 arquivos do ZIP enviado e acrescenta os arquivos do Pelotas.
+
+ATENÇÃO: o ZIP original NÃO contém a pasta assets/ nem páginas apoie.html, termos.html e privacidade.html. Elas devem permanecer no repositório atual: NÃO apague esses arquivos e NÃO substitua o repositório inteiro excluindo arquivos existentes.
+
+O link direto do instalador já está no site:
+https://github.com/viktor1944/bombacha-ferramentas/releases/download/Bombachapelotas/Bombacha_Pelotas_1.8.2_Setup.exe
+
+A mudança atualiza o SITE, não recompila o navegador Windows.
