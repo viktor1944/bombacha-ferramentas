@@ -271,3 +271,7 @@ footer{background:var(--bg);color:#d6c7bb;padding:36px 0}
 @media(max-width:700px){
   .support-box{padding:25px}
 }
+
+/* Link do Telegram no menu */
+.topbar nav a.nav-telegram{background:#229ed9;color:#fff;padding:7px 14px;border-radius:999px;font-weight:700}
+.topbar nav a.nav-telegram:hover,.topbar nav a.nav-telegram:focus-visible{background:#1b86b8;color:#fff}
