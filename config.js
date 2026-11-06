@@ -15,6 +15,14 @@ window.BOMBACHA_CONFIG = {
       UPDATED_AT: "31/07/2026",
       PLATFORM: "Windows 10 e 11"
     },
+    BOMBACHA_PELOTAS: {
+      NAME: "Bombacha Pelotas",
+      DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/Bombachapelotas/Bombacha_Pelotas_1.8.2_Setup.exe",
+      WEB_URL: "https://viktor1944.github.io/bombacha-ferramentas/bombacha-pelotas.html",
+      VERSION: "1.8.2",
+      FILE_SIZE: "A CONFIRMAR",
+      PLATFORM: "Windows 10 e 11"
+    },
     BOMBACHA_WHATSAPP: {
       NAME: "Bombacha WhatsApp",
       DOWNLOAD_URL: "https://github.com/viktor1944/bombacha-ferramentas/releases/download/bombachav6/Bombacha_WhatsApp_Setup.11.exe",
