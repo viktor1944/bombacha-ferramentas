@@ -174,11 +174,17 @@
   .hero-inner {min-height:585px !important; height:auto !important;}
 }
 
-/* Indicador da versão instalada na barra do navegador. A seta aponta para o topo. */
-.version-hero-subtitle{display:flex;align-items:flex-start;gap:8px;line-height:1.36}
-.version-hero-arrow{display:inline-block;color:#ffb347;font-size:30px;font-weight:900;line-height:.85;flex:0 0 30px;transform:translateY(-4px);text-shadow:0 2px 4px #0009}
-#version-hero-note{flex:1}
-@media(max-width:620px){.version-hero-subtitle{gap:7px}.version-hero-arrow{font-size:31px;flex-basis:31px}}
+/* Seta real do site: curvada e apontando para a etiqueta de versão do navegador, acima. */
+.version-hero-subtitle{display:block;line-height:1.43;max-width:calc(100% - 10px)}
+.version-hero-pointer{position:absolute;right:-3px;top:-8px;width:39px;height:95px;pointer-events:none;z-index:2;filter:drop-shadow(0 1px 4px #e57a1a77)}
+.version-hero-pointer svg{display:block;width:100%;height:100%;overflow:visible}
+.version-hero-pointer .arrow-stem{fill:none;stroke:#ffb847;stroke-width:8;stroke-linecap:round}
+.version-hero-pointer .arrow-tip{fill:#ffb847;stroke:#c46d12;stroke-width:1.2;stroke-linejoin:round}
+@media(max-width:620px){
+  .version-hero-pointer{top:-4px;right:2px;width:38px;height:83px}
+  .version-hero-subtitle{padding-right:8px}
+}
+@media(min-width:621px) and (max-width:950px){.version-hero-pointer{top:-7px;right:0;width:34px;height:87px}}
 </style>
 </head>
 <body>
@@ -199,9 +205,10 @@
       <div class="lights lights-left" aria-hidden="true"></div><div class="lights lights-right" aria-hidden="true"></div>
       <div class="stadium" aria-hidden="true"><div class="stadium-stands"></div><div class="pitch"><div class="center-circle"></div><div class="center-line"></div></div></div>
       <a class="version-hero-card" id="versao-atual" href="https://github.com/viktor1944/bombacha-ferramentas/releases/download/pelotas-v1.8.3/Bombacha_Pelotas_1.8.3_Setup.exe" title="Baixar a versão 1.8.3 do Bombacha Pelotas para Windows" rel="noopener noreferrer" target="_blank" download>
+  <span class="version-hero-pointer" aria-hidden="true"><svg viewBox="0 0 60 124" focusable="false" xmlns="http://www.w3.org/2000/svg"><path class="arrow-stem" d="M13 113 C37 99 39 64 36 26"/><path class="arrow-tip" d="M18 35 L34 5 L53 33 L37 28 L20 40 Z"/></svg></span>
   <span class="version-hero-label" id="version-hero-label">CONFIRA SUA VERSÃO</span>
   <strong class="version-hero-title" id="version-hero-title">ÚLTIMA VERSÃO: 1.8.3</strong>
-  <span class="version-hero-subtitle" id="version-hero-subtitle"><span class="version-hero-arrow" aria-hidden="true">↗</span><span id="version-hero-note">Confira se esta é a sua versão do navegador Bombacha Pelotas. Olhe o número na barra superior!</span></span>
+  <span class="version-hero-subtitle" id="version-hero-subtitle"><span id="version-hero-note">Confira se esta é a sua versão do navegador Bombacha Pelotas. Olhe o número na barra superior!</span></span>
   <span class="version-hero-cta" id="version-hero-cta">⬇ BAIXAR INSTALADOR EXE</span>
 </a>
 <div class="hero-inner">
