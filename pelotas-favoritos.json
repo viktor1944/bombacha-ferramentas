@@ -1,22 +1,30 @@
 {
-  "version": 4,
-  "description": "Ordem de qualidade sugerida pelo Bombacha Pelotas, com dez favoritos. Faixa VPN no PirloTV, FintTV, Rede Canais TV e LiveTV. Cada pessoa pode reorganizar localmente.",
+  "version": 5,
+  "description": "Ordem de qualidade sugerida pelo Bombacha Pelotas. Cada pessoa pode reorganizar os 11 favoritos localmente. Indicadores VPN não são mais exibidos nos cartões.",
   "sites": [
     {
       "title": "ColaTV",
       "url": "https://colatv52.live/"
     },
     {
-      "title": "PirloTV",
-      "url": "https://pirlotv.la/"
-    },
-    {
       "title": "SóColiveZah",
       "url": "https://socolivezah.tv/"
     },
     {
+      "title": "Rede Canais TV",
+      "url": "https://redecanaistv.by/"
+    },
+    {
+      "title": "LiveTV",
+      "url": "https://livetv-ru17.me/dex/allupcoming/"
+    },
+    {
       "title": "FintTV",
       "url": "https://finttv.in/"
+    },
+    {
+      "title": "PirloTV",
+      "url": "https://pirlotv.la/"
     },
     {
       "title": "VIPBox Football",
@@ -35,12 +43,8 @@
       "url": "https://pt6.livesports808.st/?hl=id-ID"
     },
     {
-      "title": "Rede Canais TV",
-      "url": "https://redecanaistv.by/"
-    },
-    {
-      "title": "LiveTV",
-      "url": "https://livetv-ru17.me/dex/allupcoming/"
+      "title": "Fútbol Libre",
+      "url": "https://futbol-libre.cam/"
     }
   ]
 }

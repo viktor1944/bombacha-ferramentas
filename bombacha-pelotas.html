@@ -85,11 +85,6 @@
 @media(max-width:1100px){.hero-copy h1{font-size:clamp(52px,7vw,79px)}.hero-inner{grid-template-columns:minmax(0,39%) minmax(0,61%)}.hero-actions .hero-link{padding:10px 12px}.project-promo{margin:24px 20px 30px}.promo-buttons{flex-direction:column}}
 @media(max-width:720px){.toplink{display:none}.hero{height:auto;min-height:610px}.hero-inner{display:flex;flex-direction:column-reverse;padding:24px 18px 0;gap:10px;overflow:visible}.hero-copy{text-align:center;padding:0}.hero-copy h1{font-size:clamp(49px,11.7vw,74px)}.hero-actions{justify-content:center;gap:8px}.hero-actions .hero-link{font-size:10px;padding:11px 12px}.mascot-wrap{width:100%;min-height:270px;height:270px;align-items:flex-start;overflow:hidden;justify-content:center;padding-top:0}.mascot-wrap img{height:360px;max-width:100%;max-height:none;transform:none;object-position:top center;mask-image:none}.project-promo{flex-direction:column;text-align:center;padding:20px 16px;margin:20px 15px 24px}.promo-buttons{width:100%;justify-content:center}.promo-buttons a{white-space:normal}}
 
-
-/* 1.8.1 — indicação VPN discreta sem comprometer os controles de ranking. */
-.vpn-ribbon{position:absolute;z-index:4;left:50%;transform:translateX(-50%);top:9px;background:#7c3aed;color:#fff;border:1px solid #cbb9ff;border-radius:7px;padding:5px 11px;font-size:10px;font-weight:950;letter-spacing:.07em;box-shadow:0 3px 13px #170e35;white-space:nowrap;cursor:pointer}
-.vpn-ribbon:hover{background:#9955fa}
-.site-card:has(.vpn-ribbon)>.site{padding-top:52px}
 .vpn-help-top{background:#49216b;border:1px solid #ab77ea;color:#f7eaff}
 .vpn-help-top:hover{background:#67328e}
 .hero-link.vpn-link{background:#5e2b87;color:#fff;border:1px solid #bc84ef}
@@ -257,11 +252,7 @@
         <p class="cloudflare-note" data-i18n="cloudDetail">O DNS da Cloudflare não é uma VPN e não garante que todos os sites abram.</p>
       </div>
     </section>
-    <section class="vpn-info" aria-label="Dicas para acesso com VPN">
-      <div class="vpn-info-symbol" aria-hidden="true">🔒</div>
-      <div><span class="eyebrow" data-i18n="vpnEyebrow">DICA DE CONEXÃO</span><h2 data-i18n="vpnHeading">Sites com indicação de VPN</h2><p data-i18n-html="vpnCopy">Os cartões do <strong>PirloTV</strong>, <strong>FintTV</strong>, <strong>Rede Canais TV</strong> e <strong>LiveTV</strong> têm uma faixa VPN. Primeiro tente abrir normalmente com o Cloudflare; se não funcionar, confira nosso guia de VPN.</p></div>
-      <a class="vpn-info-cta" href="bombacha-pelotas-vpn.html" data-i18n="vpnCta">VER COMO ATIVAR VPN ↗</a>
-    </section>
+
     <section class="project-promo" aria-label="Conheça e apoie a Bombacha Ferramentas">
       <div class="promo-symbol" aria-hidden="true">🧉⚽</div>
       <div class="promo-description"><span class="eyebrow" data-i18n="promoEyebrow">PROJETOS INDEPENDENTES</span><h2 data-i18n="promoTitle">Conheça a Bombacha Ferramentas</h2><p data-i18n="promoCopy">Descubra outros programas e extensões gratuitos. Se este navegador for útil, considere apoiar sua manutenção e futuras melhorias.</p></div>
@@ -309,16 +300,17 @@ const STORAGE_ORDER = 'bombacha-pelotas-user-order-v2';
 const STORAGE_CHECK = 'bombacha-pelotas-last-sync-v2';
 const STORAGE_SEED = 'bombacha-pelotas-seed-version';
 const DEFAULTS = [
- {title:'ColaTV',url:'https://colatv52.live/'},
- {title:'PirloTV',url:'https://pirlotv.la/'},
- {title:'SóColiveZah',url:'https://socolivezah.tv/'},
- {title:'FintTV',url:'https://finttv.in/'},
- {title:'VIPBox Football',url:'https://www.vipboxtv.sk/football-stream'},
- {title:'HalaStream',url:'https://halastream.st/soccer'},
- {title:'TVApp',url:'https://tvapp1.pk/'},
- {title:'LiveSports808',url:'https://pt6.livesports808.st/?hl=id-ID'},
- {title:'Rede Canais TV',url:'https://redecanaistv.by/'},
- {title:'LiveTV',url:'https://livetv-ru17.me/dex/allupcoming/'}
+ {title:"ColaTV",url:"https://colatv52.live/"},
+ {title:"SóColiveZah",url:"https://socolivezah.tv/"},
+ {title:"Rede Canais TV",url:"https://redecanaistv.by/"},
+ {title:"LiveTV",url:"https://livetv-ru17.me/dex/allupcoming/"},
+ {title:"FintTV",url:"https://finttv.in/"},
+ {title:"PirloTV",url:"https://pirlotv.la/"},
+ {title:"VIPBox Football",url:"https://www.vipboxtv.sk/football-stream"},
+ {title:"HalaStream",url:"https://halastream.st/soccer"},
+ {title:"TVApp",url:"https://tvapp1.pk/"},
+ {title:"LiveSports808",url:"https://pt6.livesports808.st/?hl=id-ID"},
+ {title:"Fútbol Libre",url:"https://futbol-libre.cam/"}
 ];
 const $ = id => document.getElementById(id);
 function getSaved(key){ try { return JSON.parse(localStorage.getItem(key)); } catch(_) {return null;} }
@@ -346,12 +338,12 @@ function sorted(list){
  ).map(v=>v.site);
 }
 let sites=sorted((()=>{try{return clean(getSaved(STORAGE_SITES)||DEFAULTS);}catch(_){return clean(DEFAULTS);}})());
-if(Number(localStorage.getItem(STORAGE_SEED)||0)<4){
+if(Number(localStorage.getItem(STORAGE_SEED)||0)<5){
   for(const item of DEFAULTS){
     if(!sites.some(x=>x.url===item.url)){sites.push({...item});}
   }
   sites=sorted(sites);save(STORAGE_SITES,sites);
-  try{localStorage.setItem(STORAGE_SEED,'4');}catch(_){}
+  try{localStorage.setItem(STORAGE_SEED,'5');}catch(_){}
 }
 let dragging=null;
 const tr=(key)=>window.BombachaI18n?window.BombachaI18n.t(key):key;
@@ -362,8 +354,7 @@ function render(){
  sites.forEach((site,i)=>{
   const card=document.createElement('div');card.className='site-card';card.draggable=true;
   const rank=document.createElement('span');rank.className='site-rank';rank.textContent=String(i+1).padStart(2,'0')+'º';
-  const isVpn=['pirlotv.la','finttv.in','redecanaistv.by','livetv-ru17.me'].includes(new URL(site.url).hostname.toLowerCase());
-  if(isVpn){const vpn=document.createElement('a');vpn.className='vpn-ribbon';vpn.textContent='🔒 VPN';vpn.href='bombacha-pelotas-vpn.html';vpn.title=tr('vpnTip');vpn.addEventListener('click',e=>e.stopPropagation());card.append(vpn);}
+
   const controls=document.createElement('div');controls.className='rank-controls';
   const grip=document.createElement('span');grip.className='drag-handle';grip.textContent='⠿';grip.title=tr('dragTip');
   const up=document.createElement('button');up.className='rank-arrow';up.type='button';up.textContent='↑';up.title=tr('upTip');up.disabled=i===0;
@@ -398,7 +389,7 @@ async function refresh({silent=false}={}){
   let response;try{response=await fetch(REMOTE_LIST,{cache:'no-store',credentials:'omit',signal:c.signal});}finally{clearTimeout(timer);}
   if(!response.ok)throw Error('servidor HTTP '+response.status);
   const data=await response.json();
-  if(!data||Number(data.version)<4)throw Error('O JSON publicado ainda não é a versão 4.');
+  if(!data||Number(data.version)<5)throw Error('O JSON publicado ainda não é a versão 5.');
   sites=sorted(clean(data.sites));save(STORAGE_SITES,sites);save(STORAGE_CHECK,Date.now());render();
   status(tr('updated'));
  }catch(error){if(!silent)status(tr('noUpdate')+' '+(error.message||error)+'. '+tr('kept'));}
