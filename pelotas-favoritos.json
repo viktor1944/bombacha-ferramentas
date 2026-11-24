@@ -1,6 +1,6 @@
 {
-  "version": 5,
-  "description": "Ordem de qualidade sugerida pelo Bombacha Pelotas. Cada pessoa pode reorganizar os 11 favoritos localmente. Indicadores VPN não são mais exibidos nos cartões.",
+  "version": 6,
+  "description": "Ordem de qualidade sugerida pelo Bombacha Pelotas (10 favoritos). PirloTV removido. Cada pessoa pode arrastar os cartões e salvar sua própria ordem.",
   "sites": [
     {
       "title": "ColaTV",
@@ -9,6 +9,10 @@
     {
       "title": "SóColiveZah",
       "url": "https://socolivezah.tv/"
+    },
+    {
+      "title": "Fútbol Libre",
+      "url": "https://futbol-libre.cam/"
     },
     {
       "title": "Rede Canais TV",
@@ -21,10 +25,6 @@
     {
       "title": "FintTV",
       "url": "https://finttv.in/"
-    },
-    {
-      "title": "PirloTV",
-      "url": "https://pirlotv.la/"
     },
     {
       "title": "VIPBox Football",
@@ -41,10 +41,6 @@
     {
       "title": "LiveSports808",
       "url": "https://pt6.livesports808.st/?hl=id-ID"
-    },
-    {
-      "title": "Fútbol Libre",
-      "url": "https://futbol-libre.cam/"
     }
   ]
 }
