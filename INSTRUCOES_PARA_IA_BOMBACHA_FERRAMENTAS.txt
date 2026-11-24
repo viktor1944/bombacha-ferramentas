@@ -1,0 +1,84 @@
+INSTRUÇÕES PARA QUALQUER IA QUE EDITAR O PROJETO BOMBACHA FERRAMENTAS
+===================================================================
+Arquivo público de orientações. Não contém credenciais nem informações privadas.
+
+LEIA ANTES DE ALTERAR QUALQUER ARQUIVO
+
+Este repositório hospeda o site Bombacha Ferramentas e a página do navegador
+Bombacha Pelotas, entre outros projetos. Quando o responsável enviar a você um
+ZIP, TAR.GZ ou pasta deste projeto para editar, use TODOS os arquivos recebidos
+como base e leia este documento primeiro. Considere as solicitações mais recentes
+do responsável como prioritárias.
+
+REPOSITÓRIO OFICIAL PARA PUBLICAÇÃO:
+https://github.com/viktor1944/bombacha-ferramentas
+
+Página pública principal:
+https://viktor1944.github.io/bombacha-ferramentas/
+Página inicial do navegador:
+https://viktor1944.github.io/bombacha-ferramentas/bombacha-pelotas.html
+
+1) PRESERVAÇÃO DO SITE
+- NÃO refaça o site do zero nem apague recursos que não tenham sido mencionados.
+- Preserve os arquivos, nomes, páginas, links, estilos, imagens e funcionalidades
+  que já existirem no pacote recebido.
+- Antes de editar, confira a estrutura e identifique exatamente os arquivos
+  afetados; altere somente o necessário.
+- Preserve o estilo visual atual e a responsividade de computador e celular.
+- O site Bombacha Pelotas pode ter lista de favoritos controlada por
+  pelotas-favoritos.json. Mantenha a sincronização e a possibilidade de cada
+  visitante reorganizar seus cartões; não apague as preferências locais.
+- Preserve, salvo pedido contrário, as páginas de apoio, guia de VPN, Telegram,
+  o seletor de idiomas, avisos sobre Cloudflare, a indicação da última versão e
+  seus links de download. Não altere a ordem dos favoritos sem solicitação.
+- Atualize indicadores de versão e links de download somente quando houver uma
+  nova versão REALMENTE publicada e um endereço verificado.
+
+2) ENTREGAS OBRIGATÓRIAS EM TODA RESPOSTA QUE ALTERAR ARQUIVOS
+- SEMPRE entregue o SITE COMPLETO ATUALIZADO em pelo menos dois arquivos:
+  a) Bombacha_Ferramentas_Site_Completo.zip
+  b) Bombacha_Ferramentas_Site_Completo.tar.gz
+  Esses pacotes devem incluir TODOS os arquivos necessários ao projeto,
+  inclusive as páginas sem alterações, a estrutura de pastas, imagens e este TXT.
+- Se for útil, entregue TAMBÉM um pacote 'Somente_Arquivos_Alterados' em ZIP e
+  TAR.GZ, mas NUNCA use esse pacote para substituir a entrega do site completo.
+- No fim de cada resposta, inclua SEMPRE o link clicável do repositório:
+  https://github.com/viktor1944/bombacha-ferramentas
+- Explique quais arquivos foram alterados e como publicá-los no GitHub:
+  Add file > Upload files > Commit changes. Informe quais devem ser substituídos.
+- Inclua links reais de download para os pacotes gerados. Não invente caminhos,
+  downloads, versões, resultados de testes ou confirmações de publicação.
+- Se a IA não puder criar ou anexar arquivos reais, avise com clareza e forneça
+  os arquivos ou patches disponíveis, sem fingir que um pacote foi gerado.
+
+3) SE A SOLICITAÇÃO ENVOLVER O NAVEGADOR WINDOWS / EXTENSÃO FIREFOX
+- Não confunda o site do GitHub Pages com o instalador do navegador para Windows.
+- Para mudanças no EXE, use o código-fonte correspondente e compile somente
+  se as ferramentas estiverem disponíveis; NÃO afirme ter recompilado sem fazê-lo.
+- Quando entregar uma nova versão do navegador, se possível ofereça EXE, ZIP,
+  TAR.GZ e compactações alternativas (ex.: TAR.XZ, TAR.ZST), com LEIA-ME.TXT.
+- Para uma extensão Firefox atualizada, ofereça XPI, ZIP e TAR.GZ.
+- Mantenha a versão e as configurações do projeto coerentes e preserve os dados
+  do usuário na atualização, sempre que tecnicamente possível.
+
+4) SEGURANÇA, PRIVACIDADE E QUALIDADE
+- Este texto pode ficar PÚBLICO no GitHub. NÃO acrescente senhas, tokens,
+  chaves de API, cookies de sessão, dados bancários, endereços privados,
+  dados pessoais ou quaisquer outros segredos.
+- Não coloque credenciais em arquivos HTML ou JavaScript acessíveis ao público.
+- Não publique ou envie alterações ao GitHub sem autorização explícita.
+- Verifique links, sintaxe de HTML/CSS/JS e integridade dos pacotes; explique
+  claramente o que foi testado e o que não foi possível testar.
+
+5) MODELO DE RESPOSTA FINAL APÓS UMA ATUALIZAÇÃO
+'Atualizei o Bombacha Ferramentas preservando o projeto existente.
+Mudanças realizadas: [resumo objetivo].
+Baixar SITE COMPLETO: [link ZIP] | [link TAR.GZ]
+Opcional — Somente arquivos alterados: [link ZIP] | [link TAR.GZ]
+Arquivos para substituir no GitHub: [nomes].
+ABRIR MEU GITHUB — ENVIAR ARQUIVOS:
+https://github.com/viktor1944/bombacha-ferramentas
+Passos: Add file > Upload files > Commit changes.
+Testes: [o que foi conferido e limitações].'
+
+FIM DAS INSTRUÇÕES
