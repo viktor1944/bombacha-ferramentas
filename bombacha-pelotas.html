@@ -33,7 +33,7 @@
  .mascot-wrap img{height:275px;max-width:100%;transform:none;object-position:center}
 }
 
-/* 1.5.0: classificação individual arrastável, dez favoritos em duas linhas. */
+/* 1.5.0: classificação individual arrastável, onze favoritos em duas linhas. */
 .sites{grid-template-columns:repeat(4,minmax(0,1fr))}
 .site-card{min-width:0;position:relative;display:flex;flex-direction:column;cursor:grab;transition:opacity .15s ease}
 .site-card.dragging,.edit-row.dragging{opacity:.42}
@@ -304,6 +304,7 @@ const DEFAULTS = [
  {title:"SóColiveZah",url:"https://socolivezah.tv/"},
  {title:"Fútbol Libre",url:"https://futbol-libre.cam/"},
  {title:"Rede Canais TV",url:"https://redecanaistv.by/"},
+ {title:"FCTV33",url:"https://www.fctv33.com/br"},
  {title:"LiveTV",url:"https://livetv-ru17.me/dex/allupcoming/"},
  {title:"FintTV",url:"https://finttv.in/"},
  {title:"VIPBox Football",url:"https://www.vipboxtv.sk/football-stream"},
@@ -340,7 +341,7 @@ function sorted(list){
 const REMOVED_URLS = new Set(['https://pirlotv.la/']);
 let sites=sorted((()=>{try{return clean(getSaved(STORAGE_SITES)||DEFAULTS);}catch(_){return clean(DEFAULTS);}})())
   .filter(site=>!REMOVED_URLS.has(site.url));
-if(Number(localStorage.getItem(STORAGE_SEED)||0)<6){
+if(Number(localStorage.getItem(STORAGE_SEED)||0)<7){
   const savedPersonalOrder=getSaved(STORAGE_ORDER);
   // Quem nunca personalizou recebe a ordem oficial; quem arrastou conserva a sua.
   if(!Array.isArray(savedPersonalOrder)||savedPersonalOrder.length===0){
@@ -353,7 +354,7 @@ if(Number(localStorage.getItem(STORAGE_SEED)||0)<6){
     sites=sorted(sites);
   }
   save(STORAGE_SITES,sites);
-  try{localStorage.setItem(STORAGE_SEED,'6');}catch(_){}
+  try{localStorage.setItem(STORAGE_SEED,'7');}catch(_){}
 }
 let dragging=null;
 const tr=(key)=>window.BombachaI18n?window.BombachaI18n.t(key):key;
@@ -399,7 +400,7 @@ async function refresh({silent=false}={}){
   let response;try{response=await fetch(REMOTE_LIST,{cache:'no-store',credentials:'omit',signal:c.signal});}finally{clearTimeout(timer);}
   if(!response.ok)throw Error('servidor HTTP '+response.status);
   const data=await response.json();
-  if(!data||Number(data.version)<6)throw Error('O JSON publicado ainda não é a versão 6.');
+  if(!data||Number(data.version)<7)throw Error('O JSON publicado ainda não é a versão 7.');
   sites=sorted(clean(data.sites).filter(site=>!REMOVED_URLS.has(site.url)));save(STORAGE_SITES,sites);save(STORAGE_CHECK,Date.now());render();
   status(tr('updated'));
  }catch(error){if(!silent)status(tr('noUpdate')+' '+(error.message||error)+'. '+tr('kept'));}

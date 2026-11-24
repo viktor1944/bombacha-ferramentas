@@ -1,0 +1,26 @@
+BOMBACHA PELOTAS — ATUALIZAÇÃO DA HOME (11 FAVORITOS)
+
+NOVO SITE:
+FCTV33 — https://www.fctv33.com/br
+5ª posição na classificação oficial. Os dez sites anteriores conservam a ordem relativa.
+
+ARQUIVOS PARA PUBLICAR:
+- bombacha-pelotas.html — página inicial completa
+- pelotas-favoritos.json — lista oficial, agora versão 7
+
+PUBLICAÇÃO:
+1. Extraia o ZIP ou TAR.GZ no computador.
+2. Acesse https://github.com/viktor1944/bombacha-ferramentas
+3. Clique em Add file > Upload files.
+4. Envie os DOIS arquivos à raiz do repositório, substituindo os antigos.
+5. Clique em Commit changes.
+6. Aguarde a publicação e abra:
+   https://viktor1944.github.io/bombacha-ferramentas/bombacha-pelotas.html
+
+COMPORTAMENTO DA ORDEM:
+- Quem ainda não personalizou verá o FCTV33 em 5º.
+- Quem já personalizou mantém sua ordem dos sites existentes e recebe o FCTV33 ao final.
+- Quem quiser pode arrastar o FCTV33 até a posição desejada.
+
+Não precisa reinstalar o navegador.
+Apenas a home e o JSON foram alterados.

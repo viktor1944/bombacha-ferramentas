@@ -1,6 +1,6 @@
 {
-  "version": 6,
-  "description": "Ordem de qualidade sugerida pelo Bombacha Pelotas (10 favoritos). PirloTV removido. Cada pessoa pode arrastar os cartões e salvar sua própria ordem.",
+  "version": 7,
+  "description": "Ordem de qualidade sugerida pelo Bombacha Pelotas (11 favoritos). FCTV33 adicionado na 5ª posição. PirloTV removido. Quem já personalizou mantém a ordem, com novos sites ao final.",
   "sites": [
     {
       "title": "ColaTV",
@@ -17,6 +17,10 @@
     {
       "title": "Rede Canais TV",
       "url": "https://redecanaistv.by/"
+    },
+    {
+      "title": "FCTV33",
+      "url": "https://www.fctv33.com/br"
     },
     {
       "title": "LiveTV",
